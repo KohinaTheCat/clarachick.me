@@ -4,9 +4,26 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+import { BrowserRouter as Router, Route } from 'react-router-dom';
+import Home from './Pages/Home';
+import Projects from './Pages/Projects';
+import Drawings from './Pages/Drawings';
+import Experience from './Pages/Experience';
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
+// import { Button } from 'evergreen-ui'
+
+
+ReactDOM.render(
+    <Router>
+      <div>
+        <Route exact path="/" component={Home} />
+        <Route path="/projects" component={Projects} />
+        <Route path="/drawings" component={Drawings} />
+        <Route path="/experience" component={Experience} />
+      </div>
+     </Router>,
+    // <App />,
+    document.getElementById('root')
+)
+
 serviceWorker.unregister();
