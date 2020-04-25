@@ -1,22 +1,22 @@
-import React, { Component } from 'react'
+import React from "react";
+import "./css/display.css";
 
-export class Description extends Component {
-    render() {
-        return (
-            <div className = 'Description'>
-                <br></br>
-                <br></br>  
-                <h1>{this.props.title}</h1>                
-                <h4>{this.props.status}</h4>
-                <br></br>
-                <h3>{this.props.body}</h3>
-                <hr></hr>
-                <br></br>
-                <br></br>
-                <br></br>
-            </div>
-        )
-    }
+function Description(props) {
+  return (
+    <div>
+      <div className="Description">
+        <br></br>
+        <br></br>
+
+          <div className="title">{props.title}</div>
+          <div className="status">{props.status}</div>
+          <div className="body">{props.body}</div>
+        <div className = "info">{props.info}</div>
+        <hr></hr>
+        <br></br>
+      </div>
+    </div>
+  );
 }
 
-export default Description
+export default Description;

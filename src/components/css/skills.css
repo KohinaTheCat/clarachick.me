@@ -1,0 +1,30 @@
+.fade-in {
+  padding: 5%;
+  padding-bottom: 0%;
+  padding-top: 0%;
+  opacity: 1;
+  transition: all 0.2s ease-in;
+}
+
+.fade-out {
+  padding: 5%;
+  padding-bottom: 0%;
+  padding-top: 0%;
+  opacity: 0;
+  max-height: 0;
+  transition: all 0.1s ease-out;
+}
+
+@media screen and (max-width: 900px) {
+  .fade-out {
+    transition: all 0s;
+    opacity: 1;
+    max-height: 100%;
+  }
+  .fade-in {
+    opacity: 1;
+    transition: all 0s ease-in;
+  }
+  
+}
+

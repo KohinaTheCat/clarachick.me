@@ -1,20 +1,16 @@
-import React, { Component } from 'react'
-import '../Pages/Home.css';
+import React from 'react'
 
-export class Header extends Component {
-    constructor(props){
-        super(props);
-        this.state={
-
-        }
-    }
-    render() {
-        return (
-            <div className = 'header' style={{height: this.props.height, backgroundColor: this.props.colour}}>
-                <div className = 'text-header'>{this.props.text}</div>
+function Header(props) {
+    return (
+        <div className = 'header center' style={{height: props.height, backgroundImage: `url(${props.background})`, backgroundSize: '100%'}}>
+        <div className = 'text-header'>
+            <div className = 'text-child'>
+                {props.text}
             </div>
-        )
-    }
+        </div>
+    </div>
+    )
 }
 
 export default Header
+
