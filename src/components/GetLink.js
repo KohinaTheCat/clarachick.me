@@ -23,7 +23,7 @@ export default function GetLink(props) {
     var storage = firebase.storage();
     var storageRef = storage.ref();
     storageRef
-      .child("Clara Chick Public Resume.pdf")
+      .child(props.name)
       .getDownloadURL()
       .then(function(url) {
         var xhr = new XMLHttpRequest();

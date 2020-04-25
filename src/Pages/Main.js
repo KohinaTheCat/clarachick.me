@@ -19,7 +19,7 @@ export class Main extends Component {
         </div>
         <Card className="Intro_Card" margin={24} borderRadius={10}>
           <h4>first year - computer science - university of toronto</h4>
-          <GetLink words = "download my extended resume - updated dec. 2019"></GetLink>
+          <GetLink name = "Clara Chick Public Resume.pdf" words = "download my extended resume - updated dec. 2019"></GetLink>
           <br></br>
         </Card>
         <DisplayDes></DisplayDes>

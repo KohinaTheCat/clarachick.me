@@ -1,9 +1,11 @@
 import React, { Component } from "react";
 import "./css/display.css";
+import { Link } from "evergreen-ui";
 import {Card} from "evergreen-ui";
 import "./css/display.css";
 import "../Pages/Main.css";
 import Skills from "../components/Skills";
+import GetLink from "./GetLink"
 
 export class DisplayDes extends Component {
 
@@ -42,14 +44,18 @@ export class DisplayDes extends Component {
       "sporadic"
     ],
     body: [
-      "React and Evergreen-UI",
-      "Firebase Authentication, Redux Form and Material-UI",
+      "Firebase Storage, ReactJS, CSS/HTML/Evergreen-UI",
+      "Firebase Authentication, ReactJS & Redux Form and Material-UI",
       "an open world RPG in Visual Basic",
       ""
     ],
     info: [
       <div>
-        <ul>
+        <ul className = "list">
+            <li>
+                all files are hosted on Firebase, such that download links are generated on demand.
+            </li>
+            <Link href="https://github.com/KohinaTheCat/clarachick.me" target="_blank">you can review the code on my GitHub</Link>
         </ul>
       </div>,
       <div>
@@ -60,8 +66,11 @@ export class DisplayDes extends Component {
             <li>thanks to Material-UI, it is easy on the eyes</li>
         </ul>
       </div>,
-      <div className="">
-        <ul>
+      <div>
+        <ul className = "list">
+            <li>all assets were drawn and coloured (we'll probably be copyrighted lol.)</li>
+            <li>unzip and run the .exe</li>
+            <GetLink name = "Kohina!Run.zip" words = "download the playable game here"></GetLink>
         </ul>
       </div>,
       <div className="">
