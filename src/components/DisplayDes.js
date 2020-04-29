@@ -36,8 +36,9 @@ export class DisplayDes extends Component {
     ]
   };
   proj = {
-    titles: ["clarachick.me", "Log-In and Sign-Up Menu", "Kohina! Run", "small stuff kinda worth mentioning?"],
+    titles: ["clarachick.me", "DrawView", "Log-In and Sign-Up Menu", "Kohina! Run", "small stuff kinda worth mentioning?"],
     status: [
+      "currently a work in progress",
       "currently a work in progress",
       "finished! - March 2020",
       "finished! - May 2018",
@@ -45,6 +46,7 @@ export class DisplayDes extends Component {
     ],
     body: [
       "Firebase Storage, ReactJS, CSS/HTML/Evergreen-UI",
+      "React Native",
       "Firebase Authentication, ReactJS & Redux Form and Material-UI",
       "an open world RPG in Visual Basic",
       ""
@@ -55,9 +57,18 @@ export class DisplayDes extends Component {
             <li>
                 all files are hosted on Firebase, such that download links are generated on demand.
             </li>
-            <Link href="https://github.com/KohinaTheCat/clarachick.me" target="_blank">you can review the code on my GitHub</Link>
+            <Link href="https://github.com/KohinaTheCat/DrawView" target="_blank">you can review the code on my GitHub</Link>
         </ul>
       </div>,
+      <div>
+      <ul className = "list">
+          <li>
+              trying to make an app that will help you learn to draw... more updates later 
+              (not as cool as it sounds lol)
+          </li>
+          <Link href="https://github.com/KohinaTheCat/clarachick.me" target="_blank">you can review the code on my GitHub</Link>
+      </ul>
+    </div>,
       <div>
         <ul className = "list"> 
             <li>Firebase Authentication allowed me to implement account creation, email verification and page customization.
@@ -68,7 +79,7 @@ export class DisplayDes extends Component {
       </div>,
       <div>
         <ul className = "list">
-            <li>all assets were drawn and coloured (we'll probably be copyrighted lol.)</li>
+            <li>all assets were drawn and coloured</li>
             <li>unzip and run the .exe</li>
             <GetLink name = "Kohina!Run.zip" words = "download the playable game here"></GetLink>
         </ul>
