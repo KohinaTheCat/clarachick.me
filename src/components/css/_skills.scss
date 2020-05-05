@@ -1,15 +1,19 @@
-.fade-in {
+@import "./variables";
+
+@mixin padding() {
   padding: 5%;
   padding-bottom: 0%;
   padding-top: 0%;
+}
+
+.fade-in {
+  @include padding();
   opacity: 1;
   transition: all 0.2s ease-in;
 }
 
 .fade-out {
-  padding: 5%;
-  padding-bottom: 0%;
-  padding-top: 0%;
+  @include padding();
   opacity: 0;
   max-height: 0;
   transition: all 0.1s ease-out;
@@ -25,6 +29,4 @@
     opacity: 1;
     transition: all 0s ease-in;
   }
-  
 }
-

@@ -1,0 +1,42 @@
+@import "./variables";
+
+.footer {
+  display: grid;
+  grid-area: "foot";
+  background-color: $footerBack;
+  text-align: center;
+  color: white;
+  width: 100%;
+  font-size: 20px;
+}
+
+.cont {
+  padding: 40px;
+}
+
+.icon {
+  @include HW(45px, 45px);
+  opacity: 0.7;
+  &:hover {
+    -webkit-transform: rotate(360deg);
+    -webkit-transition: -webkit-transform 0.25s ease-in-out;
+    transform: rotate(360deg);
+    transition: 0.25s ease-in-out;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .icon {
+    @include HW(35px, 35px);
+  }
+
+  .cont {
+    padding: 20px;
+  }
+}
+
+.center {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}

@@ -1,9 +1,7 @@
 import React, { Component } from "react";
-import "./css/display.css";
 import { Link } from "evergreen-ui";
 import {Card} from "evergreen-ui";
-import "./css/display.css";
-import "../Pages/Main.css";
+import "./css/styles.css";
 import Skills from "../components/Skills";
 import GetLink from "./GetLink"
 
@@ -36,7 +34,7 @@ export class DisplayDes extends Component {
     ]
   };
   proj = {
-    titles: ["clarachick.me", "DrawView", "Log-In and Sign-Up Menu", "Kohina! Run", "small stuff kinda worth mentioning?"],
+    titles: ["clarachick.me", "DrawView", "Log-In and Sign-Up Menu", "Kohina! Run"],
     status: [
       "currently a work in progress",
       "currently a work in progress",
@@ -45,7 +43,7 @@ export class DisplayDes extends Component {
       "sporadic"
     ],
     body: [
-      "Firebase Storage, ReactJS, CSS/HTML/Evergreen-UI",
+      "Firebase Storage, ReactJS, SASS/Evergreen-UI",
       "React Native",
       "Firebase Authentication, ReactJS & Redux Form and Material-UI",
       "an open world RPG in Visual Basic",
@@ -63,8 +61,7 @@ export class DisplayDes extends Component {
       <div>
       <ul className = "list">
           <li>
-              trying to make an app that will help you learn to draw... more updates later 
-              (not as cool as it sounds lol)
+              trying to make an app that will help you learn to draw... more updates later
           </li>
           <Link href="https://github.com/KohinaTheCat/clarachick.me" target="_blank">you can review the code on my GitHub</Link>
       </ul>

@@ -1,5 +1,5 @@
 import React from "react";
-import "./css/display.css";
+import "./css/styles.css";
 
 function Description(props) {
   return (
@@ -8,10 +8,10 @@ function Description(props) {
         <br></br>
         <br></br>
 
-          <div className="title">{props.title}</div>
-          <div className="status">{props.status}</div>
-          <div className="body">{props.body}</div>
-        <div className = "info">{props.info}</div>
+        <div className="title">{props.title}</div>
+        <div className="status">{props.status}</div>
+        <div className="body">{props.body}</div>
+        <div className="info">{props.info}</div>
         <hr></hr>
         <br></br>
       </div>

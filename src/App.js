@@ -1,10 +1,9 @@
 import React from 'react';
-import Home from './Pages/Home'
-import Footer from './components/Footer';
+import Main from './Pages/Main'
 
 function App() {
   return (
-    <Home></Home>
+    <Main></Main>
   );
 }
 

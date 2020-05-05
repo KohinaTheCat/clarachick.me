@@ -1,5 +1,5 @@
 import React from "react";
-import "./css/skills.css";
+import "./css/styles.css";
 import Description from './Description'
 
 function Skills(props) {
