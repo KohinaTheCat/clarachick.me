@@ -3,14 +3,22 @@ import ReactDOM from "react-dom";
 import "./index.css";
 import * as serviceWorker from "./serviceWorker";
 
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Route,
+  Switch,
+  Redirect,
+} from "react-router-dom";
 import Main from "./Pages/Main";
+import OhNo from "./Pages/OhNo";
 
 ReactDOM.render(
   <Router>
-    <div>
+    <Switch>
       <Route exact path="/" component={Main} />
-    </div>
+      <Route path="/RouteError" component={OhNo} />
+      <Redirect to="/RouteError" />
+    </Switch>
   </Router>,
   document.getElementById("root")
 );

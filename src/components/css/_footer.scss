@@ -35,6 +35,16 @@
   }
 }
 
+@media screen and (max-width: 500px) {
+  .icon {
+    @include HW(25px, 25px);
+  }
+
+  .cont {
+    padding: 20px;
+  }
+}
+
 .center {
   align-items: center;
   display: flex;

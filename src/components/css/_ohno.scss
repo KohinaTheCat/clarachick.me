@@ -1,0 +1,23 @@
+@import "./variables";
+
+.error_img {
+  background-image: url("../../imgs/sad.png");
+  @include HW(512px, 512px);
+  opacity: 0.5;
+  margin-top: 10%;
+
+  background-size: 100% 100%;
+}
+
+@media screen and (max-width: 900px) {
+  .error_img {
+    @include HW(312px, 312px);
+    background-size: 100% 100%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .error_img {
+    @include HW(112px, 112px);
+  }
+}

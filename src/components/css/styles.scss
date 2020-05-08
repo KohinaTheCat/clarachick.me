@@ -6,6 +6,7 @@
 @import "./footer";
 @import "./display";
 @import "./skills";
+@import "./_ohno";
 
 @mixin flexCenter {
   display: flex;
@@ -31,8 +32,6 @@
 
 .Pane {
   width: 100%;
-  background-image: url("../../imgs/blue-snow.png");
-  background-color: $headerBack;
   height: 400px;
   text-align: center;
 }
@@ -48,11 +47,12 @@
 }
 
 .Intro_Card {
-  font-family: "Courier New", Courier, monospace;
+  font-family: "Lato", sans-serif;
   background-color: $introBack;
   font-size: 15px;
   text-align: center;
-  width: 90%;
+  border-radius: 10px;
+  width: 50%;
   padding: 20px;
 }
 
@@ -73,16 +73,16 @@
 #first,
 #second,
 #third {
-  @include titleStyle(200px, 15%, absolute, 100%);
+  @include titleStyle(200px, 80px, absolute, 100%);
   font-family: "Lobster", cursive;
 }
 
 #greeting {
-  @include titleStyle(30px, 12%, absolute, 10%);
+  @include titleStyle(30px, 70px, absolute, 10%);
   font-family: "Passion One", cursive;
 }
 #sent {
-  @include titleStyle(30px, 85%, relative, 0px);
+  @include titleStyle(30px, 300px, relative, 0px);
   font-family: "Passion One", cursive;
 }
 
@@ -117,7 +117,7 @@
   #first,
   #second,
   #third {
-    font-size: 140px;
+    @include titleStyle(140px, 80px, absolute, 100%);
   }
   #first {
     left: 70px;
@@ -156,5 +156,26 @@
     text-align: center;
     width: 90%;
     padding: 10px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #first,
+  #second,
+  #third {
+    @include titleStyle(100px, 90px, absolute, 100%);
+  }
+  #first {
+    left: 40px;
+  }
+  #second {
+    left: 50px;
+  }
+  #third {
+    left: 60px;
+  }
+  .Card {
+    @include HW(180px, 180px);
+    margin-right: 0;
   }
 }

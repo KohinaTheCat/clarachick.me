@@ -40,6 +40,16 @@
   }
 }
 
+@media screen and (max-width: 500px) {
+  .icon {
+    height: 25px;
+    width: 25px;
+  }
+  .cont {
+    padding: 20px;
+  }
+}
+
 .center {
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -199,6 +209,30 @@ li {
   }
 }
 
+.error_img {
+  background-image: url("../../imgs/sad.png");
+  height: 512px;
+  width: 512px;
+  opacity: 0.5;
+  margin-top: 10%;
+  background-size: 100% 100%;
+}
+
+@media screen and (max-width: 900px) {
+  .error_img {
+    height: 312px;
+    width: 312px;
+    background-size: 100% 100%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .error_img {
+    height: 112px;
+    width: 112px;
+  }
+}
+
 .Background {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -215,8 +249,6 @@ li {
 
 .Pane {
   width: 100%;
-  background-image: url("../../imgs/blue-snow.png");
-  background-color: #ddebf7;
   height: 400px;
   text-align: center;
 }
@@ -238,11 +270,12 @@ li {
 }
 
 .Intro_Card {
-  font-family: "Courier New", Courier, monospace;
+  font-family: "Lato", sans-serif;
   background-color: #fef6f6;
   font-size: 15px;
   text-align: center;
-  width: 90%;
+  border-radius: 10px;
+  width: 50%;
   padding: 20px;
 }
 
@@ -265,7 +298,7 @@ li {
 #second,
 #third {
   font-size: 200px;
-  top: 15%;
+  top: 80px;
   position: absolute;
   left: 100%;
   font-family: "Lobster", cursive;
@@ -273,7 +306,7 @@ li {
 
 #greeting {
   font-size: 30px;
-  top: 12%;
+  top: 70px;
   position: absolute;
   left: 10%;
   font-family: "Passion One", cursive;
@@ -281,7 +314,7 @@ li {
 
 #sent {
   font-size: 30px;
-  top: 85%;
+  top: 300px;
   position: relative;
   left: 0px;
   font-family: "Passion One", cursive;
@@ -331,6 +364,9 @@ li {
   #second,
   #third {
     font-size: 140px;
+    top: 80px;
+    position: absolute;
+    left: 100%;
   }
   #first {
     left: 70px;
@@ -375,6 +411,31 @@ li {
     text-align: center;
     width: 90%;
     padding: 10px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #first,
+  #second,
+  #third {
+    font-size: 100px;
+    top: 90px;
+    position: absolute;
+    left: 100%;
+  }
+  #first {
+    left: 40px;
+  }
+  #second {
+    left: 50px;
+  }
+  #third {
+    left: 60px;
+  }
+  .Card {
+    height: 180px;
+    width: 180px;
+    margin-right: 0;
   }
 }
 /*# sourceMappingURL=styles.css.map */
