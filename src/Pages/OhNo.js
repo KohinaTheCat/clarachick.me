@@ -2,6 +2,7 @@ import React from "react";
 import "../components/css/styles.css";
 import { Link } from "evergreen-ui";
 
+//Clara Chick
 function OhNo() {
   return (
     <div className="Background">

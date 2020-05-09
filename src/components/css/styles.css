@@ -5,7 +5,6 @@
   display: -ms-grid;
   display: grid;
   grid-area: "foot";
-  background-color: #e6f2ff;
   text-align: center;
   color: white;
   width: 100%;
@@ -150,6 +149,11 @@ li {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  .hover:hover {
+    -webkit-transition: all 0s;
+    transition: all 0s;
+    background-color: #fdf8f3;
   }
   .title {
     font-size: 22px;
@@ -354,6 +358,23 @@ li {
 #third {
   left: 120px;
   color: white;
+}
+
+@media screen and (min-width: 1500px) {
+  #first,
+  #second,
+  #third {
+    padding-left: 10%;
+  }
+  #first {
+    left: 100px;
+  }
+  #second {
+    left: 120px;
+  }
+  #third {
+    left: 130px;
+  }
 }
 
 @media screen and (max-width: 900px) {

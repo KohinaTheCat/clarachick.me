@@ -110,6 +110,23 @@
   @include leftCol(120px, white);
 }
 
+@media screen and (min-width: 1500px) {
+    #first,
+    #second,
+    #third {
+      padding-left: 10%;
+    }
+  #first {
+    left: 100px;
+  }
+  #second {
+    left: 120px;
+  }
+  #third {
+    left: 130px;
+  }
+}
+
 @media screen and (max-width: 900px) {
   .Pane {
     height: 300px;

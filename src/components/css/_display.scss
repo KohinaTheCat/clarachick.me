@@ -59,6 +59,12 @@ li {
     display: flex;
     flex-direction: column;
   }
+  .hover {
+    &:hover {
+      transition: all 0s;
+      background-color: $cardBack;
+    }
+  }
   .title {
     font-size: 22px;
   }

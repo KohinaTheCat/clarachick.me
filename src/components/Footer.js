@@ -3,7 +3,7 @@ import './css/styles.css'
 
 function Footer(props) {
     return (
-        <div className = 'footer center' style = {{marginTop: "5%"}}>
+        <div className = 'footer center'>
                 <div className = 'footer center'>
                     <div className = "cont">
                         <a href = "https://www.instagram.com/aaclr60/" >

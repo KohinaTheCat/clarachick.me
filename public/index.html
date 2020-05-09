@@ -5,18 +5,41 @@
     <link rel="icon" href="%PUBLIC_URL%/kohina.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
-    <meta
-      name="Clara Chick"
-      content="Unhandeled Exception"
-    />
+    <meta name="Clara Chick" content="Unhandeled Exception" />
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
     <title>Clara Chick - what an odd name</title>
-    <meta name = "description" content="Clara Chick's updated personal website to showcase her projects and skills."/>
-    <meta content="1de8bb4765e5f0a2f2f47645125b825e"/>
+    <meta
+      name="description"
+      content="Clara Chick's updated personal website to showcase her projects and skills."
+    />
+    <meta content="1de8bb4765e5f0a2f2f47645125b825e" />
     <!-- 1de8bb4765e5f0a2f2f47645125b825e -->
-
   </head>
+  
   <body>
     <div id="root"></div>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.14.3/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.14.3/firebase-analytics.js"></script>
+
+    <script>
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+        apiKey: "AIzaSyA4muyCH1SqNLZxQssRVCyUurL1xwO4HgA",
+        authDomain: "website-27f8b.firebaseapp.com",
+        databaseURL: "https://website-27f8b.firebaseio.com",
+        projectId: "website-27f8b",
+        storageBucket: "website-27f8b.appspot.com",
+        messagingSenderId: "552039785351",
+        appId: "1:552039785351:web:f9e6acc8963a5fa97ba922",
+        measurementId: "G-BPMZ2CJZFZ",
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+      firebase.analytics();
+    </script>
   </body>
 </html>

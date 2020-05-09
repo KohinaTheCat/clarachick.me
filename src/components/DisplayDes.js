@@ -114,7 +114,7 @@ export class DisplayDes extends Component {
       <div>
         <ul className="list">
           <li>
-            Funny story: this website was made 3 times.
+            funny story: this website was made 3 times.
             <br />
             <br />
             <b>1.</b> when I was back in high-school and I made it on Wordpress.
@@ -161,11 +161,11 @@ export class DisplayDes extends Component {
             generated on demand.
           </li>
           <li>
-            Used SASS and EvergreenUI to achieve a simple, yet visually pleasing
+            used SASS and EvergreenUI to achieve a simple, yet visually pleasing
             website design that is responsive and unique
           </li>
           <li>
-            Learned the fundamentals of ReactJS such as state, hooks, and
+            ;earned the fundamentals of ReactJS such as state, hooks, and
             component reusability
           </li>
           <Link href="https://github.com/KohinaTheCat/DrawView" target="_blank">
@@ -238,15 +238,15 @@ export class DisplayDes extends Component {
           <li>I coloured in most of the assets</li>
           <li>interface design</li>
           <li>
-            Successfully lead a team of three to ensure project deadlines were
+            successfully lead a team of three to ensure project deadlines were
             met
           </li>
           <li>
-            Learned the process of the software development cycle to optimize
+            learned the process of the software development cycle to optimize
             our time and ensure a high-quality game
           </li>
           <li>
-            Developed, tested, integrated and debugged team to guarantee smooth
+            developed, tested, integrated and debugged team to guarantee smooth
             and bug-free gameplay
           </li>
           <br />
@@ -281,7 +281,7 @@ export class DisplayDes extends Component {
   };
   state = {
     clicked: [false, false, false],
-    titles: ["Experience", "Projects", "Other Cool Stuff"],
+    titles: ["work experience", "side projects", "other cool stuff"],
     info: [this.job, this.proj, this.side],
   };
 
