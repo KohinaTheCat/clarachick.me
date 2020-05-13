@@ -1,10 +1,10 @@
 import React, { Component } from "react";
 import "../components/css/styles.css";
-import Footer from "../components/Footer";
 import { DisplayDes } from "../components/DisplayDes";
 import { Card } from "evergreen-ui";
 import GetLink from "../components/GetLink";
 import Sky from "react-sky";
+import ScrollToTop from "../components/ScrollToTop"
 
 import myImage from "../imgs/icon-kohina-opacity.png";
 import image2 from "../imgs/cat.png";
@@ -15,6 +15,7 @@ export class Main extends Component {
   render() {
     return (
       <div className="Background">
+          <ScrollToTop/>
         <div className="Pane">
           <div className="Pane" style={{ position: "absolute" }}>
             <Sky
@@ -51,21 +52,6 @@ export class Main extends Component {
         </Card>
 
         <DisplayDes></DisplayDes>
-
-        <div className="footer" style={{ position: "relative" }}>
-          <Sky
-            images={{
-              0: myImage,
-              1: image2,
-              2: image3,
-            }}
-            how={100}
-            time={30} /* time of animation */
-            size={"100px"} /* size of the rendered images */
-            background={"#ddebf7"}
-          />
-          <Footer></Footer>
-        </div>
       </div>
     );
   }

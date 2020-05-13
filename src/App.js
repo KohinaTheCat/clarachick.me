@@ -1,9 +1,13 @@
-import React from 'react';
-import Main from './Pages/Main'
+import React, { version } from "react";
+import Main from "./Pages/Main";
+import ScrolltoTop from "./components/ScrollToTop";
 
 function App() {
   return (
-    <Main></Main>
+    <>
+      <ScrolltoTop></ScrolltoTop>
+      <Main></Main>
+    </>
   );
 }
 

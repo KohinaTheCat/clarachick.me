@@ -4,6 +4,7 @@ import { Card } from "evergreen-ui";
 import "./css/styles.css";
 import Skills from "../components/Skills";
 import GetLink from "./GetLink";
+import { Link as L } from "react-router-dom";
 
 export class DisplayDes extends Component {
   var;
@@ -113,162 +114,42 @@ export class DisplayDes extends Component {
     info: [
       <div>
         <ul className="list">
-          <li>
-            funny story: this website was made 3 times.
-            <br />
-            <br />
-            <b>1.</b> when I was back in high-school and I made it on Wordpress.
-            It's still up at {"  "}
-            <Link href="https://cluura.wordpress.com/" target="_blank">
-              https://cluura.wordpress.com/
-            </Link>
-            <br />
-            <br />
-            <b>2.</b> when I was first learning about web-dev, back in Nov.
-            2019. It was supposed to replace my Wordpress website, the website
-            layout was very similar, but it was poorly made, not responsive and
-            I didn't think it fully reflected myself in terms of design.
-            <br />
-            <br />
-            <b>3.</b> this iteration. I would say it's the best (ofc it is, it's
-            the one you're seeing). I made this website responsive, it passes
-            the {"  "}
-            <Link href="http://ami.responsivedesign.is/" target="_blank">
-              http://ami.responsivedesign.is/
-            </Link>
-            {"  "} test! Also a unique design which I like. It is simple and
-            full of warm colours, a relection of who I think I am.
-            <br />
-            <br />
-            <b>Side Note:</b> yes I know I should probably make each of my
-            descriptions on another page, so it's not one big long page, but I
-            like that you just need to scroll to view everything else, and not
-            have to click and go back etc. kind of like Instagram???
-          </li>
-          <li>
-            thank you to{" "}
-            <Link href="https://github.com/lucagez/sky" target="_blank">
-              Sky API
-            </Link>{" "}
-            for the amazing animated background
-          </li>
-          <li>
-            simple React Router for an error page. Go check it out! type in a
-            random subpage and see what you find!
-          </li>
-          <li>
-            all files are hosted on Firebase, such that download links are
-            generated on demand.
-          </li>
-          <li>
-            used SASS and EvergreenUI to achieve a simple, yet visually pleasing
-            website design that is responsive and unique
-          </li>
-          <li>
-            ;earned the fundamentals of ReactJS such as state, hooks, and
-            component reusability
-          </li>
+          <L to="/about_website">
+            want some more details about the process? click here!
+          </L>
+          <br />
+          <br />
           <Link href="https://github.com/KohinaTheCat/DrawView" target="_blank">
             you can review the code on my GitHub
           </Link>
+          <br />
         </ul>
       </div>,
       <div>
         <ul className="list">
-          <li>
-            trying to make an app that will help you learn to draw... more
-            updates later
-          </li>
-          <li>
-            <b>what I have now:</b> nice animated home screen, access to camera,
-            able to get image from storage, and an overlay on the camera. It can
-            overlay the image over the camera view so you can "trace" what you
-            want to draw, or make sure your current drawing is on-track with
-            your reference. The image overaly "tilts" depending on the position
-            of your phone so the FOV of the image matches your drawing no matter
-            the angle
-          </li>
-          <li>
-            <b>what I want to do:</b> add an edge detection so it actually
-            plants the image on the paper and not just have it floating there.
-          </li>
-          <li>
-            <b>problems:</b> lack of time, expo doesn't support any edge
-            detection APIs and I'm having trouble with my "pure" React-Native
-            version of the app. (made one using the expo API and one without). I
-            couldn't install the edge detection API, even googling the error
-            didn't help. I'll fix it one day... one day soon.
-          </li>
+          <L to="/about_drawview">
+            want some more details about the process? click here!
+          </L>
+          <br />
+          <br />
           <Link
-            href="https://github.com/KohinaTheCat/clarachick.me"
-            target="_blank"
-          >
+            href="https://github.com/KohinaTheCat/clarachick.me" target="_blank">
             you can review the code on my GitHub
           </Link>
         </ul>
       </div>,
       <div>
         <ul className="list">
-          <li>
-            This game is my pride and joy and brought so many tears to my eyes.
-            This as my first big project and I spent over 100+ hours on it. I
-            love it. Inspired by Poptropica!!!
-          </li>
-          <li>
-            <b>what's up with this game?</b> so, me and two other people made
-            this from scratch, everything was programmed, and drawn by us.
-            (probably a reason why it took so long), BUT it was a great learning
-            experience.
-            <br />
-            <br />
-            so, it's based on this anime, and you the player plays as a girl who
-            needs to collect all the ingredients to make her noodles.
-          </li>
-          <b>what I did:</b>
+          <L to="/about_kohinarun">
+            want some more details about the process? click here!
+          </L>
           <br />
-          <br />
-          <li>all player movement and animation</li>
-          <li>collision detection</li>
-          <li>inventory management</li>
-          <li>saving and loading save-files</li>
-          <li>
-            I did one mini-game, the last one "cooking". legends say it's
-            unbeatable
-          </li>
-          <li>I coloured in most of the assets</li>
-          <li>interface design</li>
-          <li>
-            successfully lead a team of three to ensure project deadlines were
-            met
-          </li>
-          <li>
-            learned the process of the software development cycle to optimize
-            our time and ensure a high-quality game
-          </li>
-          <li>
-            developed, tested, integrated and debugged team to guarantee smooth
-            and bug-free gameplay
-          </li>
           <br />
           <b>unzip and run the .exe</b>
           <GetLink
             name="Kohina!Run.zip"
             words="download the playable game here"
           ></GetLink>
-        </ul>
-      </div>,
-      <div className="">
-        <ul>
-          <div className="">
-            <b>2019 - An IO game using NodeJS</b>
-            <ul></ul>
-          </div>
-          <br />
-          <br />
-          <div className="">
-            <b>2019 - RPG with 2D Unity</b>
-            <ul></ul>
-          </div>
         </ul>
       </div>,
     ],

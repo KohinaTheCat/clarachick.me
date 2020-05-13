@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Lobster&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Lobster|Passion+One&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Lato&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap");
 .footer {
   display: -ms-grid;
   display: grid;
@@ -234,6 +235,97 @@ li {
   .error_img {
     height: 112px;
     width: 112px;
+  }
+}
+
+.blog_header {
+  width: 100%;
+  height: 350px;
+  text-align: center;
+}
+
+.return {
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  left: 10px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.return:hover {
+  height: 70px;
+  width: 70px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.blog_title {
+  font-size: 50px;
+  font-family: "Cutive Mono", monospace;
+  position: relative;
+  top: 150px;
+}
+
+.blog_subtitle {
+  font-size: 30px;
+  font-family: "Cutive Mono", monospace;
+  position: relative;
+  top: 150px;
+}
+
+.blog_body {
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 3%;
+  margin-bottom: 60px;
+}
+
+.blog_body li {
+  list-style: none;
+}
+
+.blog_card {
+  background-color: #fdf8f3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+  width: 80%;
+  padding-bottom: 50px;
+}
+
+.code {
+  border-radius: 5px;
+  background-color: white;
+}
+
+.tab {
+  margin-left: 30px;
+}
+
+@media screen and (max-width: 900px) {
+  .blog_header {
+    height: 270px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .blog_header {
+    height: 250px;
+  }
+  .blog_title {
+    font-size: 40px;
+    top: 100px;
+  }
+  .blog_subtitle {
+    font-size: 325x;
+    top: 100px;
   }
 }
 
