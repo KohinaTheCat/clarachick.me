@@ -1,0 +1,33 @@
+@import "./variables";
+
+@mixin padding() {
+  padding: 5%;
+  padding-bottom: 0%;
+  padding-top: 0%;
+}
+
+#fade-in {
+  @include padding();
+  opacity: 1;
+  max-height: 2000px;
+  transition: all 0.3s linear;
+
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  transform: translateZ(0);
+}
+
+#fade-out {
+  @include padding();
+  opacity: 0;
+  max-height: 0;
+  transition: all 0.3s linear;
+
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  transform: translateZ(0);
+}

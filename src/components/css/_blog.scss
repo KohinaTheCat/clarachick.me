@@ -13,7 +13,7 @@
     left: 10px;
     transition: all 0.5s;
     &:hover{
-        @include HW(70px, 70px);
+        @include HW(60px, 60px);
         transition: all 0.5s;
     }
 }
@@ -75,4 +75,10 @@
     font-size: 325x;
     top: 100px;
   }
+  .return{
+    @include HW(30px, 30px);
+    &:hover{
+        @include HW(35px, 35px);
+    }
+}
 }

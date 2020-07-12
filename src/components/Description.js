@@ -11,6 +11,7 @@ function Description(props) {
         <div className="title">{props.title}</div>
         <div className="status">{props.status}</div>
         <div className="body">{props.body}</div>
+
         <div className="info">{props.info}</div>
         <hr></hr>
         <br></br>

@@ -80,7 +80,6 @@ li {
 .hover {
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
-  transition: all 0.5s;
   width: 100%;
 }
 
@@ -133,7 +132,6 @@ li {
 
 .body {
   font-size: 15px;
-  padding-left: 10%;
 }
 
 .info {
@@ -181,39 +179,6 @@ li {
   width: 100%;
 }
 
-.fade-in {
-  padding: 5%;
-  padding-bottom: 0%;
-  padding-top: 0%;
-  opacity: 1;
-  -webkit-transition: all 0.2s ease-in;
-  transition: all 0.2s ease-in;
-}
-
-.fade-out {
-  padding: 5%;
-  padding-bottom: 0%;
-  padding-top: 0%;
-  opacity: 0;
-  max-height: 0;
-  -webkit-transition: all 0.1s ease-out;
-  transition: all 0.1s ease-out;
-}
-
-@media screen and (max-width: 900px) {
-  .fade-out {
-    -webkit-transition: all 0s;
-    transition: all 0s;
-    opacity: 1;
-    max-height: 100%;
-  }
-  .fade-in {
-    opacity: 1;
-    -webkit-transition: all 0s ease-in;
-    transition: all 0s ease-in;
-  }
-}
-
 .error_img {
   background-image: url("../../imgs/sad.png");
   height: 512px;
@@ -254,8 +219,8 @@ li {
 }
 
 .return:hover {
-  height: 70px;
-  width: 70px;
+  height: 60px;
+  width: 60px;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
@@ -327,6 +292,14 @@ li {
     font-size: 325x;
     top: 100px;
   }
+  .return {
+    height: 30px;
+    width: 30px;
+  }
+  .return:hover {
+    height: 35px;
+    width: 35px;
+  }
 }
 
 .Background {
@@ -340,6 +313,7 @@ li {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-bottom: 15px;
   width: 100%;
 }
 
@@ -366,7 +340,7 @@ li {
 }
 
 .Intro_Card {
-  font-family: "Lato", sans-serif;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   background-color: #fef6f6;
   font-size: 15px;
   text-align: center;
@@ -519,7 +493,6 @@ li {
   }
   .Intro_Card {
     font-family: "Lato", sans-serif;
-    font-size: 12px;
     background-color: #fef6f6;
     text-align: center;
     width: 90%;

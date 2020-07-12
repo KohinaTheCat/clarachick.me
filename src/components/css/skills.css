@@ -1,0 +1,24 @@
+#fade-in {
+  padding: 5%;
+  padding-bottom: 0%;
+  padding-top: 0%;
+  opacity: 1;
+  max-height: 2000px;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+}
+
+#fade-out {
+  padding: 5%;
+  padding-bottom: 0%;
+  padding-top: 0%;
+  opacity: 0;
+  max-height: 0;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+}
+/*# sourceMappingURL=skills.css.map */

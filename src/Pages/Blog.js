@@ -1,12 +1,14 @@
 import React from "react";
 import styles from "../components/css/styles.css";
-import Sky from "react-sky";
 
+import { Card } from "evergreen-ui";
+
+//MAKE COMPONENT LATER
+import Sky from "react-sky";
 import myImage from "../imgs/icon-kohina-opacity.png";
 import image2 from "../imgs/cat.png";
 import image3 from "../imgs/heart.png";
 
-import { Card } from "evergreen-ui";
 
 export default function Blog() {
   return (

@@ -1,11 +1,12 @@
 import React, { Component } from "react";
-import { Link } from "evergreen-ui";
-import { Card } from "evergreen-ui";
-import "./css/styles.css";
+import "./css/skills.css";
+import { Link, Card } from "evergreen-ui";
 import Skills from "../components/Skills";
 import GetLink from "./GetLink";
 import { Link as L } from "react-router-dom";
 
+
+//SHORTEN THIS. LESS TEXT
 export class DisplayDes extends Component {
   var;
   job = {
@@ -27,13 +28,9 @@ export class DisplayDes extends Component {
     info: [
       <div className="list">
         <li>
-          This position pushed me to start learning about web-devleopment!
-        </li>
-        <li>
           Made a pseudo game lobby to practise Redux. In the game lobby there
           are four players and each player can choose one of seven colours of
-          the rainbow, but not a colour that is chosen. Got familiar with
-          MaterialUI
+          the rainbow, but not a colour that is chosen.
         </li>
         <li>
           Learned the Gitflow Workflow to work on projects in teams with ease
@@ -50,14 +47,9 @@ export class DisplayDes extends Component {
       </div>,
       <div className="list">
         <li>
-          This job really helped my communication skills. I was pushed to
-          interact and deal with difficult customers. Made friends.
+          Learned in a fast pace enviroment. 
         </li>
-        <li>
-          Learned in a fast pace enviroment. I found myself learning about some
-          new technology everyday, either from a customer or my co-workers.
-        </li>
-        <li>Did some upselling. Wasn't too bad at it.</li>
+        <li>Upsold warranty plans</li>
         <li>
           Provided customers with customized advice to satisfy their
           technological requirements
@@ -76,20 +68,7 @@ export class DisplayDes extends Component {
         </li>
       </div>,
       <div className="list">
-        <li>
-          I volunteered at previous summer camps before, so I was prepared for
-          this job, but I did have to learn to communicate with children who did
-          not natively speak English. They were nice kids.
-        </li>
-        <li>
-          This job challenged me to teach in front of my co-workers and
-          children. Metaphors were quite helpful.
-        </li>
         <li>Taught children the basic programming concepts in Python</li>
-        <li>
-          Collaborated with other camp counsellors to ensure every child was
-          having fun
-        </li>
         <li>
           Mediated fights between campers, finding a solution both parties
           agreed upon
@@ -101,56 +80,72 @@ export class DisplayDes extends Component {
     titles: ["clarachick.me", "DrawView", "Kohina! Run"],
     status: [
       "currently a work in progress",
-      "currently a work in progress",
+      "updating! - May 2020",
       "finished! - May 2018",
       "sporadic",
     ],
     body: [
       "Firebase Storage, ReactJS, SASS/Evergreen-UI",
       "React Native",
-      "an open world RPG in Visual Basic",
+      <>
+        an open world RPG in Visual Basic
+      </>,
       "",
     ],
     info: [
       <div>
         <ul className="list">
+          This is just a personal website to show my experience and technical
+          skills.
+          <br />
+          <br />
           <L to="/about_website">
             want some more details about the process? click here!
           </L>
           <br />
-          <br />
-          <Link href="https://github.com/KohinaTheCat/DrawView" target="_blank">
-            you can review the code on my GitHub
-          </Link>
-          <br />
         </ul>
+        <Link
+          href="https://github.com/KohinaTheCat/clarachick.me"
+          target="_blank"
+        >
+          <h4>you can review the code on my GitHub</h4>
+        </Link>
       </div>,
       <div>
         <ul className="list">
+          When starting to draw, it is good to follow references. This app is
+          supposed to help beginners make sure they're "on track" with their
+          references and guide them on areas that they're struggling with.
+          <br />
+          <br />
           <L to="/about_drawview">
             want some more details about the process? click here!
           </L>
           <br />
-          <br />
-          <Link
-            href="https://github.com/KohinaTheCat/clarachick.me" target="_blank">
-            you can review the code on my GitHub
-          </Link>
         </ul>
+        <Link href="https://github.com/KohinaTheCat/DrawView" target="_blank">
+          <h4>you can review the code on my GitHub</h4>
+        </Link>
       </div>,
       <div>
         <ul className="list">
+          Kohina!Run is an open world RPG where you play as a girl who travels
+          around town to make a bowl of noodles. You have to complete minigames,
+          solve puzzles and talk to players around the town to find the
+          ingredients.
+          <br />
+          <br />
           <L to="/about_kohinarun">
             want some more details about the process? click here!
           </L>
           <br />
           <br />
-          <b>unzip and run the .exe</b>
-          <GetLink
-            name="Kohina!Run.zip"
-            words="download the playable game here"
-          ></GetLink>
         </ul>
+        <b>unzip and run the .exe</b>
+        <GetLink
+          name="Kohina!Run.zip"
+          words="download the playable game here"
+        ></GetLink>
       </div>,
     ],
   };
@@ -183,34 +178,31 @@ export class DisplayDes extends Component {
             margin={24}
             width="80%"
             onClick={() => this.click(index)}
-            borderRadius={10}
           >
             <Card
               className="Card Card2"
               elevation={1}
               key={title}
               margin={24}
-              borderRadius={10}
             >
               <Card
                 className="Card Card3"
                 elevation={1}
                 key={title}
                 margin={24}
-                borderRadius={10}
               >
                 <div id="f">{title}</div>
               </Card>
             </Card>
             {this.state.clicked[index] ? (
-              <div className="fade-in">
+              <div id="fade-in">
                 <Skills
                   state={this.state.clicked[index]}
                   info={this.state.info[index]}
                 ></Skills>
               </div>
             ) : (
-              <div className="fade-out">
+              <div id="fade-out">
                 <Skills
                   state={this.state.clicked[index]}
                   info={this.state.info[index]}
