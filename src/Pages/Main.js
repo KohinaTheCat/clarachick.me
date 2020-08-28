@@ -34,10 +34,51 @@ export class Main extends Component {
           </div>
 
           {/* <div id="greeting">Cheers, it's</div> */}
-          <div id="first">Clara</div>
-          <div id="second">Clara</div>
-          <div id="third">Clara</div>
-          <div id="sent">chaotically organized</div>
+          <div id="first">Clara Chick</div>
+          <div id="second">Clara Chick</div>
+          <div id="third">Clara Chick</div>
+          <div id="sent">
+            <div className="footer center">
+              <div className="footer center">
+                <div className="cont">
+                  <a href="https://www.instagram.com/aaclr60/">
+                    <img
+                      src={require("../imgs/icons/insta.png")}
+                      className="icon"
+                      alt="insta"
+                    />
+                  </a>
+                </div>
+                <div className="cont">
+                  <a href="https://www.linkedin.com/in/clarachick/">
+                    <img
+                      src={require("../imgs/icons/link.png")}
+                      className="icon"
+                      alt="link"
+                    ></img>
+                  </a>
+                </div>
+                <div className="cont">
+                  <a href="https://github.com/KohinaTheCat">
+                    <img
+                      src={require("../imgs/icons/github.png")}
+                      className="icon"
+                      alt="github"
+                    ></img>
+                  </a>
+                </div>
+                <div className="cont">
+                  <a href="mailto:clara.chick@mail.utoronto.ca">
+                    <img
+                      src={require("../imgs/icons/mail.png")}
+                      className="icon"
+                      alt="email"
+                    ></img>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
 
         <Card className="Intro_Card" margin={24} borderRadius={10}>
@@ -53,7 +94,7 @@ export class Main extends Component {
 
           <GetLink
             name="Clara Chick Public Resume.pdf"
-            words="download my extended resume - updated may. 2020"
+            words="download my extended resume - updated august. 2020"
           ></GetLink>
         </Card>
 

@@ -1,20 +1,13 @@
 import React from "react";
-import "../components/css/styles.css";
-
-import { Link } from "evergreen-ui";
+import "./css/styles.css";
 import { Link as L } from "react-router-dom";
-import { Card } from "evergreen-ui";
-import Markdown from "../components/Markdown";
-
-//MAKE COMPONENT LATER
 import Sky from "react-sky";
 import myImage from "../imgs/icon-kohina-opacity.png";
 import image2 from "../imgs/cat.png";
 import image3 from "../imgs/heart.png";
 
-export default function DrawView() {
+export default function Header(props) {
   return (
-    <div className="Background">
       <div className="Pane">
         <div className="blog_header" style={{ position: "absolute" }}>
           <Sky
@@ -32,21 +25,13 @@ export default function DrawView() {
         <L to="/">
           <img
             src={require("../imgs/return.png")}
+            style={{ opacity: 0.7 }}
             alt="home"
             className="return"
           ></img>
         </L>
-        <div className="blog_title">./DrawView</div>
-        <div className="blog_subtitle">./React Native</div>
+        <div className="blog_title">{"./" + props.title}</div>
+        <div className="blog_subtitle">{"./" + props.desc}</div>
       </div>
-
-      <Card className="blog_card blog_body">
-        <Markdown md="drawview.md"></Markdown>
-
-        <Link href="https://github.com/KohinaTheCat/DrawView" target="_blank">
-          <h4>you can review the code on my GitHub</h4>
-        </Link>
-      </Card>
-    </div>
   );
 }

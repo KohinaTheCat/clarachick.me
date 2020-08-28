@@ -16,14 +16,14 @@ The player must find all the ingredients, interact with the environment, and com
 
 **my contributions:**
 
-- all player movement and animation
-- collision detection
-- player inventory management
-- saving and loading save-files
-- one mini-game: "cooking"
-- colour assets and interface design
-- successfully lead a team of three to ensure project deadlines were met
-- learned the process of the software development cycle to optimize our time and ensure a high-quality game
-- developed, tested, integrated and debugged code  to guarantee smooth and bug-free gameplay
+- ‣ all player movement and animation
+- ‣ collision detection
+- ‣ player inventory management
+- ‣ saving and loading save-files
+- ‣ one mini-game: "cooking"
+- ‣ colour assets and interface design
+- ‣ successfully lead a team of three to ensure project deadlines were met
+- ‣ learned the process of the software development cycle to optimize our time and ensure a high-quality game
+- ‣ developed, tested, integrated and debugged code  to guarantee smooth and bug-free gameplay
 
 <br>

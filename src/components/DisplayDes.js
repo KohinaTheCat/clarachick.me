@@ -5,7 +5,6 @@ import Skills from "../components/Skills";
 import GetLink from "./GetLink";
 import { Link as L } from "react-router-dom";
 
-
 //SHORTEN THIS. LESS TEXT
 export class DisplayDes extends Component {
   var;
@@ -21,7 +20,7 @@ export class DisplayDes extends Component {
       "Upper Canada College Summer Camps",
     ],
     body: [
-      "Nov. 2019 - Present",
+      "Nov. 2019 - May 2020",
       "Sept. 2017 - Jan. 2020",
       "June 2018 - July 2018",
     ],
@@ -46,9 +45,7 @@ export class DisplayDes extends Component {
         </li>
       </div>,
       <div className="list">
-        <li>
-          Learned in a fast pace enviroment. 
-        </li>
+        <li>Learned in a fast pace enviroment.</li>
         <li>Upsold warranty plans</li>
         <li>
           Provided customers with customized advice to satisfy their
@@ -77,19 +74,19 @@ export class DisplayDes extends Component {
     ],
   };
   proj = {
-    titles: ["clarachick.me", "DrawView", "Kohina! Run"],
+    titles: ["clarachick.me", "Mock Bash Shell", "BudgetMe", "Kohina! Run"],
     status: [
+      "updating!",
+      "finished! - August 2020",
       "currently a work in progress",
-      "updating! - May 2020",
       "finished! - May 2018",
       "sporadic",
     ],
     body: [
-      "Firebase Storage, ReactJS, SASS/Evergreen-UI",
-      "React Native",
-      <>
-        an open world RPG in Visual Basic
-      </>,
+      "Firebase Storage, React, SASS/Evergreen-UI",
+      "Object Orientated Programming - Java",
+      "MERN Stack, React-vis",
+      <>an open world RPG in Visual Basic</>,
       "",
     ],
     info: [
@@ -99,33 +96,90 @@ export class DisplayDes extends Component {
           skills.
           <br />
           <br />
-          <L to="/about_website">
-            want some more details about the process? click here!
-          </L>
-          <br />
+          <div className="row">
+            <Link
+              href="https://github.com/KohinaTheCat/clarachick.me"
+              target="_blank"
+            >
+              <img
+                style={{ height: 30, width: 30 }}
+                src={require("../imgs/icons/github.png")}
+                className="icon"
+                alt="github"
+              />
+            </Link>
+            <L to="/about_website">
+              <img
+                title="About Website"
+                style={{ height: 30, width: 30 }}
+                src={require("../imgs/about.png")}
+                className="icon"
+                alt="about"
+              ></img>
+            </L>
+          </div>
         </ul>
-        <Link
-          href="https://github.com/KohinaTheCat/clarachick.me"
-          target="_blank"
-        >
-          <h4>you can review the code on my GitHub</h4>
-        </Link>
       </div>,
       <div>
         <ul className="list">
-          When starting to draw, it is good to follow references. This app is
-          supposed to help beginners make sure they're "on track" with their
-          references and guide them on areas that they're struggling with.
+          Developed in a team of three using the the Agile Scrum methodology
+          that implements core bash commands.
           <br />
           <br />
-          <L to="/about_drawview">
-            want some more details about the process? click here!
-          </L>
-          <br />
+          <div className="row">
+            <Link
+              href="https://github.com/KohinaTheCat/Mock-Shell-in-Java/"
+              target="_blank"
+            >
+              <img
+                style={{ height: 30, width: 30 }}
+                src={require("../imgs/icons/github.png")}
+                className="icon"
+                alt="github"
+              />
+            </Link>
+            <L to="/about_mockshell">
+              <img
+                title="About Mock Shell in Java"
+                style={{ height: 30, width: 30 }}
+                src={require("../imgs/about.png")}
+                className="icon"
+                alt="about"
+              ></img>
+            </L>
+          </div>
         </ul>
-        <Link href="https://github.com/KohinaTheCat/DrawView" target="_blank">
-          <h4>you can review the code on my GitHub</h4>
-        </Link>
+      </div>,
+      <div>
+        <ul className="list">
+          Made a REST API with the MERN stack to allow the user to create, read,
+          update, and delete [CRUD] their day-to-day expenses, while having it
+          visualized using React-vis.
+          <br />
+          <br />
+          <div className="row">
+            <Link
+              href="https://github.com/KohinaTheCat/mern-practice"
+              target="_blank"
+            >
+              <img
+                style={{ height: 30, width: 30 }}
+                src={require("../imgs/icons/github.png")}
+                className="icon"
+                alt="github"
+              ></img>
+            </Link>
+            <L to="/about_MERN">
+              <img
+                title="About Budgeting"
+                style={{ height: 30, width: 30 }}
+                src={require("../imgs/about.png")}
+                className="icon"
+                alt="about"
+              ></img>
+            </L>
+          </div>
+        </ul>
       </div>,
       <div>
         <ul className="list">
@@ -136,16 +190,19 @@ export class DisplayDes extends Component {
           <br />
           <br />
           <L to="/about_kohinarun">
-            want some more details about the process? click here!
+            <img
+              title="About Kohina!Run"
+              style={{ height: 30, width: 30 }}
+              src={require("../imgs/about.png")}
+              className="icon"
+              alt="about"
+            ></img>
           </L>
-          <br />
-          <br />
+          <GetLink
+            name="Kohina!Run.zip"
+            words="download the playable game here"
+          ></GetLink>
         </ul>
-        <b>unzip and run the .exe</b>
-        <GetLink
-          name="Kohina!Run.zip"
-          words="download the playable game here"
-        ></GetLink>
       </div>,
     ],
   };
@@ -179,12 +236,7 @@ export class DisplayDes extends Component {
             width="80%"
             onClick={() => this.click(index)}
           >
-            <Card
-              className="Card Card2"
-              elevation={1}
-              key={title}
-              margin={24}
-            >
+            <Card className="Card Card2" elevation={1} key={title} margin={24}>
               <Card
                 className="Card Card3"
                 elevation={1}

@@ -1,11 +1,18 @@
 import React from "react";
 import "./css/styles.css";
+import { Card } from "evergreen-ui";
 
 function Description(props) {
   return (
-    <div>
+    <Card
+      className="card"
+      elevation={1}
+      paddingLeft={20}
+      paddingRight={20}
+      marginTop={20}
+      marginBotton={20}
+    >
       <div className="Description">
-        <br></br>
         <br></br>
 
         <div className="title">{props.title}</div>
@@ -13,10 +20,9 @@ function Description(props) {
         <div className="body">{props.body}</div>
 
         <div className="info">{props.info}</div>
-        <hr></hr>
         <br></br>
       </div>
-    </div>
+    </Card>
   );
 }
 

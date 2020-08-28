@@ -1,3 +1,7 @@
+.card {
+  background-color: rgba(250, 227, 205, 0.3);
+}
+
 #fade-in {
   padding: 5%;
   padding-bottom: 0%;

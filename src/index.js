@@ -4,9 +4,9 @@ import "./index.css";
 import * as serviceWorker from "./serviceWorker";
 import Footer from "./components/Footer";
 import Website from "./Pages/Website";
-import DrawView from "./Pages/DrawView";
+import M from "./Pages/MERN";
 import KohinaRun from "./Pages/KohinaRun";
-
+import MockShell from "./Pages/Shell"
 import {
   BrowserRouter as Router,
   Route,
@@ -23,8 +23,9 @@ ReactDOM.render(
     <Switch>
       <Route exact path="/" component={Main} />
       <Route exact path="/about_website" component={Website} />
-      <Route exact path="/about_drawview" component={DrawView} />
+      <Route exact path="/about_MERN" component={M} />
       <Route exact path="/about_kohinarun" component={KohinaRun} />
+      <Route exact path="/about_mockshell" component={MockShell} />
       <Route path="/RouteError" component={OhNo} />
       <Redirect to="/RouteError" />
     </Switch>

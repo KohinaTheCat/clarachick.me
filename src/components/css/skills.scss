@@ -6,6 +6,10 @@
   padding-top: 0%;
 }
 
+.card{
+    background-color: rgba(250,227,205, 0.3);
+}
+
 #fade-in {
   @include padding();
   opacity: 1;

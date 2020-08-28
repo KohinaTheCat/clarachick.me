@@ -84,9 +84,10 @@ li {
 }
 
 .hover:hover {
+  cursor: pointer;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgba(0, 0, 0, 0.05);
 }
 
 .center {
@@ -364,13 +365,27 @@ li {
   background-color: #d9822b;
 }
 
+.row {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin: 5px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 20px;
+}
+
 #first,
 #second,
 #third {
-  font-size: 200px;
+  font-size: 150px;
   top: 80px;
   position: absolute;
-  left: 100%;
+  left: 0%;
   font-family: "Lobster", cursive;
 }
 
@@ -384,7 +399,7 @@ li {
 
 #sent {
   font-size: 30px;
-  top: 300px;
+  top: 250px;
   position: relative;
   left: 0px;
   font-family: "Passion One", cursive;
@@ -412,17 +427,17 @@ li {
 }
 
 #first {
-  left: 80px;
+  left: 20px;
   color: #234361;
 }
 
 #second {
-  left: 100px;
+  left: 30px;
   color: #425a70;
 }
 
 #third {
-  left: 120px;
+  left: 40px;
   color: white;
 }
 
@@ -430,16 +445,16 @@ li {
   #first,
   #second,
   #third {
-    padding-left: 10%;
+    padding-left: 0%;
   }
   #first {
     left: 100px;
   }
   #second {
-    left: 120px;
+    left: 110px;
   }
   #third {
-    left: 130px;
+    left: 120px;
   }
 }
 
@@ -450,26 +465,26 @@ li {
   #first,
   #second,
   #third {
-    font-size: 140px;
+    font-size: 90px;
     top: 80px;
     position: absolute;
-    left: 100%;
+    left: 0%;
   }
   #first {
-    left: 70px;
+    left: 30px;
   }
   #second {
-    left: 80px;
+    left: 35px;
   }
   #third {
-    left: 90px;
+    left: 40px;
   }
   #greeting,
   #sent {
     font-size: 20px;
   }
   #sent {
-    top: 80%;
+    top: 70%;
   }
   .Nav {
     height: 50px;
@@ -504,19 +519,22 @@ li {
   #first,
   #second,
   #third {
-    font-size: 100px;
+    font-size: 50px;
     top: 90px;
     position: absolute;
     left: 100%;
   }
   #first {
-    left: 40px;
+    left: 19%;
   }
   #second {
-    left: 50px;
+    left: 20%;
   }
   #third {
-    left: 60px;
+    left: 21%;
+  }
+  #sent {
+    top: 60%;
   }
   .Card {
     height: 180px;

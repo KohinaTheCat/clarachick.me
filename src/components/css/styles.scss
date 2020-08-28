@@ -71,10 +71,18 @@
   background-color: $title2;
 }
 
+.row{
+    flex-direction: row;
+    margin: 5px;
+    display: inline-flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
 #first,
 #second,
 #third {
-  @include titleStyle(200px, 80px, absolute, 100%);
+  @include titleStyle(150px, 80px, absolute, 0%);
   font-family: "Lobster", cursive;
 }
 
@@ -83,7 +91,7 @@
   font-family: "Passion One", cursive;
 }
 #sent {
-  @include titleStyle(30px, 300px, relative, 0px);
+  @include titleStyle(30px, 250px, relative, 0px);
   font-family: "Passion One", cursive;
 }
 
@@ -102,29 +110,29 @@
 }
 
 #first {
-  @include leftCol(80px, $darkG);
+  @include leftCol(20px, $darkG);
 }
 #second {
-  @include leftCol(100px, $medG);
+  @include leftCol(30px, $medG);
 }
 #third {
-  @include leftCol(120px, white);
+  @include leftCol(40px, white);
 }
 
 @media screen and (min-width: 1500px) {
     #first,
     #second,
     #third {
-      padding-left: 10%;
+      padding-left: 0%;
     }
   #first {
     left: 100px;
   }
   #second {
-    left: 120px;
+    left: 110px;
   }
   #third {
-    left: 130px;
+    left: 120px;
   }
 }
 
@@ -135,23 +143,23 @@
   #first,
   #second,
   #third {
-    @include titleStyle(140px, 80px, absolute, 100%);
+    @include titleStyle(90px, 80px, absolute, 0%);
   }
   #first {
-    left: 70px;
+    left: 30px;
   }
   #second {
-    left: 80px;
+    left: 35px;
   }
   #third {
-    left: 90px;
+    left: 40px;
   }
   #greeting,
   #sent {
     font-size: 20px;
   }
   #sent {
-    top: 80%;
+    top: 70%;
   }
   .Nav {
     height: 50px;
@@ -180,16 +188,19 @@
   #first,
   #second,
   #third {
-    @include titleStyle(100px, 90px, absolute, 100%);
+    @include titleStyle(50px, 90px, absolute, 100%);
   }
   #first {
-    left: 40px;
+    left: 19%;
   }
   #second {
-    left: 50px;
+    left: 20%;
   }
   #third {
-    left: 60px;
+    left: 21%;
+  }
+  #sent{
+      top: 60%;
   }
   .Card {
     @include HW(180px, 180px);
