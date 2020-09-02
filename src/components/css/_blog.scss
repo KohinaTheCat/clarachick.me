@@ -7,15 +7,18 @@
   text-align: center;
 }
 
-.return{
-    position: absolute;
-    @include HW(50px, 50px);
-    left: 10px;
+.return {
+  position: absolute;
+  @include HW(50px, 50px);
+  top: 20px;
+  left: 20px;
+  transition: all 0.5s;
+  &:hover {
+    @include HW(60px, 60px);
+    top: 15px;
+    left: 15px;
     transition: all 0.5s;
-    &:hover{
-        @include HW(60px, 60px);
-        transition: all 0.5s;
-    }
+  }
 }
 
 .blog_title {
@@ -75,10 +78,10 @@
     font-size: 325x;
     top: 100px;
   }
-  .return{
+  .return {
     @include HW(30px, 30px);
-    &:hover{
-        @include HW(35px, 35px);
+    &:hover {
+      @include HW(35px, 35px);
     }
-}
+  }
 }

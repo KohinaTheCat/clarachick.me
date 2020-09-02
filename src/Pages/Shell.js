@@ -1,8 +1,8 @@
 import React from "react";
 import "../components/css/styles.css";
 
-import { Link } from "evergreen-ui";
 import { Card } from "evergreen-ui";
+import GithubLink from "../components/links/GithubLink";
 import Markdown from "../components/Markdown";
 import Header from "../components/Header";
 
@@ -13,13 +13,7 @@ export default function Shell() {
 
       <Card className="blog_card blog_body">
         <Markdown md="shell.md"></Markdown>
-
-        <Link
-          href="https://github.com/KohinaTheCat/Mock-Shell-in-Java/"
-          target="_blank"
-        >
-          <h4>you can review the code on my GitHub</h4>
-        </Link>
+        <GithubLink url="https://github.com/KohinaTheCat/Mock-Shell-in-Java/" />
       </Card>
     </div>
   );

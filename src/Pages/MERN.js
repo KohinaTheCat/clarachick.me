@@ -1,7 +1,7 @@
 import React from "react";
 import "../components/css/styles.css";
 
-import { Link } from "evergreen-ui";
+import GitHubLink from "../components/links/GithubLink";
 import { Card } from "evergreen-ui";
 import Markdown from "../components/Markdown";
 import Header from "../components/Header";
@@ -14,12 +14,7 @@ export default function MERN() {
       <Card className="blog_card blog_body">
         <Markdown md="budjetme.md"></Markdown>
 
-        <Link
-          href="https://github.com/KohinaTheCat/mern-practice"
-          target="_blank"
-        >
-          <h4>you can review the code on my GitHub</h4>
-        </Link>
+        <GitHubLink url="https://github.com/KohinaTheCat/mern-practice" />
       </Card>
     </div>
   );

@@ -1,9 +1,10 @@
 import React, { Component } from "react";
 import "./css/skills.css";
-import { Link, Card } from "evergreen-ui";
+import { Card } from "evergreen-ui";
 import Skills from "../components/Skills";
-import GetLink from "./GetLink";
-import { Link as L } from "react-router-dom";
+import GetLink from "./links/GetLink";
+import PageLink from "./links/PageLink";
+import GithubLink from "./links/GithubLink";
 
 //SHORTEN THIS. LESS TEXT
 export class DisplayDes extends Component {
@@ -27,7 +28,7 @@ export class DisplayDes extends Component {
     info: [
       <div className="list">
         <li>
-          Made a pseudo game lobby to practise Redux. In the game lobby there
+          Made a pseudo game lobby to practice Redux. In the game lobby there
           are four players and each player can choose one of seven colours of
           the rainbow, but not a colour that is chosen.
         </li>
@@ -66,15 +67,11 @@ export class DisplayDes extends Component {
       </div>,
       <div className="list">
         <li>Taught children the basic programming concepts in Python</li>
-        <li>
-          Mediated fights between campers, finding a solution both parties
-          agreed upon
-        </li>
       </div>,
     ],
   };
   proj = {
-    titles: ["clarachick.me", "Mock Bash Shell", "BudgetMe", "Kohina! Run"],
+    titles: ["clarachick.me", "Mock Bash Shell", "BudgetMe", "Kohina!Run"],
     status: [
       "updating!",
       "finished! - August 2020",
@@ -83,7 +80,7 @@ export class DisplayDes extends Component {
       "sporadic",
     ],
     body: [
-      "Firebase Storage, React, SASS/Evergreen-UI",
+      "Firebase Storage, React, Sass/Evergreen-UI",
       "Object Orientated Programming - Java",
       "MERN Stack, React-vis",
       <>an open world RPG in Visual Basic</>,
@@ -97,26 +94,8 @@ export class DisplayDes extends Component {
           <br />
           <br />
           <div className="row">
-            <Link
-              href="https://github.com/KohinaTheCat/clarachick.me"
-              target="_blank"
-            >
-              <img
-                style={{ height: 30, width: 30 }}
-                src={require("../imgs/icons/github.png")}
-                className="icon"
-                alt="github"
-              />
-            </Link>
-            <L to="/about_website">
-              <img
-                title="About Website"
-                style={{ height: 30, width: 30 }}
-                src={require("../imgs/about.png")}
-                className="icon"
-                alt="about"
-              ></img>
-            </L>
+            <GithubLink url="https://github.com/KohinaTheCat/clarachick.me" />
+            <PageLink link="/about_website" />
           </div>
         </ul>
       </div>,
@@ -127,26 +106,8 @@ export class DisplayDes extends Component {
           <br />
           <br />
           <div className="row">
-            <Link
-              href="https://github.com/KohinaTheCat/Mock-Shell-in-Java/"
-              target="_blank"
-            >
-              <img
-                style={{ height: 30, width: 30 }}
-                src={require("../imgs/icons/github.png")}
-                className="icon"
-                alt="github"
-              />
-            </Link>
-            <L to="/about_mockshell">
-              <img
-                title="About Mock Shell in Java"
-                style={{ height: 30, width: 30 }}
-                src={require("../imgs/about.png")}
-                className="icon"
-                alt="about"
-              ></img>
-            </L>
+            <GithubLink url="https://github.com/KohinaTheCat/Mock-Shell-in-Java/" />
+            <PageLink link="/about_mockshell" />
           </div>
         </ul>
       </div>,
@@ -158,26 +119,8 @@ export class DisplayDes extends Component {
           <br />
           <br />
           <div className="row">
-            <Link
-              href="https://github.com/KohinaTheCat/mern-practice"
-              target="_blank"
-            >
-              <img
-                style={{ height: 30, width: 30 }}
-                src={require("../imgs/icons/github.png")}
-                className="icon"
-                alt="github"
-              ></img>
-            </Link>
-            <L to="/about_MERN">
-              <img
-                title="About Budgeting"
-                style={{ height: 30, width: 30 }}
-                src={require("../imgs/about.png")}
-                className="icon"
-                alt="about"
-              ></img>
-            </L>
+            <GithubLink url="https://github.com/KohinaTheCat/mern-practice" />
+            <PageLink link="/about_MERN" />
           </div>
         </ul>
       </div>,
@@ -189,15 +132,7 @@ export class DisplayDes extends Component {
           ingredients.
           <br />
           <br />
-          <L to="/about_kohinarun">
-            <img
-              title="About Kohina!Run"
-              style={{ height: 30, width: 30 }}
-              src={require("../imgs/about.png")}
-              className="icon"
-              alt="about"
-            ></img>
-          </L>
+          <PageLink link="/about_kohinarun" />
           <GetLink
             name="Kohina!Run.zip"
             words="download the playable game here"
@@ -213,16 +148,9 @@ export class DisplayDes extends Component {
     info: [<div className=""></div>],
   };
   state = {
-    clicked: [false, false, false],
-    titles: ["work experience", "side projects", "other cool stuff"],
+    titles: ["experience", "side projects", "other cool stuff"],
     info: [this.job, this.proj, this.side],
   };
-
-  click(j) {
-    var copy = this.state.clicked;
-    copy[j] = !this.state.clicked[j];
-    this.setState({ clicked: copy });
-  }
 
   render() {
     return (
@@ -234,7 +162,6 @@ export class DisplayDes extends Component {
             key={title}
             margin={24}
             width="80%"
-            onClick={() => this.click(index)}
           >
             <Card className="Card Card2" elevation={1} key={title} margin={24}>
               <Card
@@ -246,21 +173,9 @@ export class DisplayDes extends Component {
                 <div id="f">{title}</div>
               </Card>
             </Card>
-            {this.state.clicked[index] ? (
-              <div id="fade-in">
-                <Skills
-                  state={this.state.clicked[index]}
-                  info={this.state.info[index]}
-                ></Skills>
-              </div>
-            ) : (
-              <div id="fade-out">
-                <Skills
-                  state={this.state.clicked[index]}
-                  info={this.state.info[index]}
-                ></Skills>
-              </div>
-            )}
+            <div id="p">
+              <Skills info={this.state.info[index]}></Skills>
+            </div>
           </Card>
         ))}
       </div>

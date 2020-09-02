@@ -21,9 +21,14 @@
   position: $pos;
   left: $left;
 }
+
 @mixin leftCol($left, $col) {
   left: $left;
   color: $col;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 .Background {
@@ -48,7 +53,7 @@
 }
 
 .Intro_Card {
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   background-color: $introBack;
   font-size: 15px;
   text-align: center;
@@ -59,7 +64,7 @@
 
 .Card {
   position: relative;
-  @include HW(250px, 250px);
+  @include HW(225px, 225px);
   margin-right: 100px;
 }
 
@@ -71,12 +76,12 @@
   background-color: $title2;
 }
 
-.row{
-    flex-direction: row;
-    margin: 5px;
-    display: inline-flex;
-    flex-wrap: wrap;
-    gap: 20px;
+.row {
+  flex-direction: row;
+  margin: 5px;
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
 #first,
@@ -98,7 +103,6 @@
 #f,
 #t {
   @include titleStyle(30px, 40%, absolute, 10%);
-  @include HW(100%, 100%);
   font-family: "Lobster", cursive;
   color: black;
 }
@@ -120,11 +124,11 @@
 }
 
 @media screen and (min-width: 1500px) {
-    #first,
-    #second,
-    #third {
-      padding-left: 0%;
-    }
+  #first,
+  #second,
+  #third {
+    padding-left: 0%;
+  }
   #first {
     left: 100px;
   }
@@ -199,8 +203,8 @@
   #third {
     left: 21%;
   }
-  #sent{
-      top: 60%;
+  #sent {
+    top: 60%;
   }
   .Card {
     @include HW(180px, 180px);

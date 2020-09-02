@@ -17,11 +17,6 @@ li {
 .hover {
   transition: all 0.5s;
   width: 100%;
-  &:hover {
-    cursor: pointer;
-    transition: all 0.5s;
-    background-color: rgba(0, 0, 0, 0.05);
-  }
 }
 
 .center {
@@ -48,8 +43,9 @@ li {
 .body {
   font-size: 15px;
 }
+
 .info {
-  padding-top: 3%;
+  padding-top: 10px;
   font-size: 15px;
 }
 

@@ -1,10 +1,16 @@
 import React, { Component } from "react";
 import "../components/css/styles.css";
+import "../components/css/util.css";
 
 import { DisplayDes } from "../components/DisplayDes";
 import { Card, Heading } from "evergreen-ui";
-import GetLink from "../components/GetLink";
+import GetLink from "../components/links/GetLink";
 import ScrollToTop from "../components/ScrollToTop";
+import Footer from "../components/Footer";
+
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import { faPython, faJava, faReact } from "@fortawesome/free-brands-svg-icons";
+// import { faPython } from '@fortawesome/free-solid-svg-icons'
 
 //MAKE COMPONENT LATER
 import Sky from "react-sky";
@@ -18,7 +24,7 @@ export class Main extends Component {
     return (
       <div className="Background">
         <ScrollToTop />
-        <div className="Pane">
+        <div className="Pane noselect">
           <div className="Pane" style={{ position: "absolute" }}>
             <Sky
               images={{
@@ -38,46 +44,7 @@ export class Main extends Component {
           <div id="second">Clara Chick</div>
           <div id="third">Clara Chick</div>
           <div id="sent">
-            <div className="footer center">
-              <div className="footer center">
-                <div className="cont">
-                  <a href="https://www.instagram.com/aaclr60/">
-                    <img
-                      src={require("../imgs/icons/insta.png")}
-                      className="icon"
-                      alt="insta"
-                    />
-                  </a>
-                </div>
-                <div className="cont">
-                  <a href="https://www.linkedin.com/in/clarachick/">
-                    <img
-                      src={require("../imgs/icons/link.png")}
-                      className="icon"
-                      alt="link"
-                    ></img>
-                  </a>
-                </div>
-                <div className="cont">
-                  <a href="https://github.com/KohinaTheCat">
-                    <img
-                      src={require("../imgs/icons/github.png")}
-                      className="icon"
-                      alt="github"
-                    ></img>
-                  </a>
-                </div>
-                <div className="cont">
-                  <a href="mailto:clara.chick@mail.utoronto.ca">
-                    <img
-                      src={require("../imgs/icons/mail.png")}
-                      className="icon"
-                      alt="email"
-                    ></img>
-                  </a>
-                </div>
-              </div>
-            </div>
+            <Footer />
           </div>
         </div>
 
@@ -91,11 +58,15 @@ export class Main extends Component {
             pursing a degree in computer science ― software engineering stream ―
             major in statistics
           </Heading>
-
           <GetLink
             name="Clara Chick Public Resume.pdf"
             words="download my extended resume - updated august. 2020"
           ></GetLink>
+          {/* <div className="icon_row">
+            <FontAwesomeIcon icon={faPython} size="lg" />
+            <FontAwesomeIcon icon={faJava} size="lg"/>
+            <FontAwesomeIcon icon={faReact} size="lg"/>
+          </div> */}
         </Card>
 
         <DisplayDes></DisplayDes>

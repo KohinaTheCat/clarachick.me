@@ -1,11 +1,10 @@
 import React from "react";
 import "../components/css/styles.css";
 
-import GetLink from "../components/GetLink";
+import GetLink from "../components/links/GetLink";
 import { Card } from "evergreen-ui";
 import Markdown from "../components/Markdown";
 import Header from "../components/Header";
-
 
 export default function Blog() {
   return (

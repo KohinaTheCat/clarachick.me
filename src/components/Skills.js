@@ -12,6 +12,7 @@ function Skills(props) {
           status={props.info.status[index]}
           body={props.info.body[index]}
           info={props.info.info[index]}
+          i={index}
         ></Description>
       ))}
     </div>

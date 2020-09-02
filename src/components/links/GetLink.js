@@ -41,10 +41,8 @@ export default function GetLink(props) {
   };
 
   return (
-    <div>
-      <Link href="#" onClick={getLink} color="blue">
-        <h4>{props.words}</h4>
-      </Link>
-    </div>
+    <Link onClick={getLink} color="blue">
+      <h4>{props.words}</h4>
+    </Link>
   );
 }
