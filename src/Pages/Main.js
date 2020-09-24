@@ -51,7 +51,7 @@ export class Main extends Component {
         <Card className="Intro_Card" margin={24} borderRadius={10}>
           <Heading>
             <b>
-              second year ― computer science ― university of toronto ― 4.0 cGPA
+              second year ― computer science ― university of toronto ― 3.98 cGPA
             </b>
             <br />
             <br />

@@ -14,5 +14,6 @@
 - ‣ dynamic page generation
 - ‣ redesign for scalibility 
 - ‣ fix css lag
+- ‣ i apologize to all mobile users on /kohinarun
 
 <br>

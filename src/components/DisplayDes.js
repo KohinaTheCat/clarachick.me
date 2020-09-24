@@ -5,27 +5,43 @@ import Skills from "../components/Skills";
 import GetLink from "./links/GetLink";
 import PageLink from "./links/PageLink";
 import GithubLink from "./links/GithubLink";
+import Live from "./links/LiveLink";
 
 //SHORTEN THIS. LESS TEXT
 export class DisplayDes extends Component {
   var;
   job = {
     titles: [
+      "Teaching Assistant",
       "Junior Full-Stack Developer",
       "Technology Associate",
       "Coding Camp Counselor",
     ],
     status: [
+      "University of Toronto",
       "Developer Student Club @ UTSC",
       "Staples",
       "Upper Canada College Summer Camps",
     ],
     body: [
+      "Sept. 2020 - Present",
       "Nov. 2019 - May 2020",
       "Sept. 2017 - Jan. 2020",
       "June 2018 - July 2018",
     ],
     info: [
+      <div className="list">
+        <li>
+          <a target="_blank" rel="noopener noreferrer" href="https://utsc.calendar.utoronto.ca/course/csca08h3">
+            CSCA08 - Introduction to Computer Science I
+          </a>
+        </li>
+        <li>
+          <a target="_blank" rel="noopener noreferrer" href="https://utsc.calendar.utoronto.ca/course/csca08h3">
+            MGTA01 - Introduction to Business
+          </a>
+        </li>
+      </div>,
       <div className="list">
         <li>
           Made a pseudo game lobby to practice Redux. In the game lobby there
@@ -71,7 +87,7 @@ export class DisplayDes extends Component {
     ],
   };
   proj = {
-    titles: ["clarachick.me", "Mock Bash Shell", "BudgetMe", "Kohina!Run"],
+    titles: ["clarachick.me", "Mock Bash Shell", "BudgetClara", "Kohina!Run"],
     status: [
       "updating!",
       "finished! - August 2020",
@@ -95,6 +111,7 @@ export class DisplayDes extends Component {
           <br />
           <div className="row">
             <GithubLink url="https://github.com/KohinaTheCat/clarachick.me" />
+            <Live url="https://clarachick.me/" />
             <PageLink link="/about_website" />
           </div>
         </ul>
@@ -120,6 +137,7 @@ export class DisplayDes extends Component {
           <br />
           <div className="row">
             <GithubLink url="https://github.com/KohinaTheCat/mern-practice" />
+            <Live url="https://budget-clara.herokuapp.com/" />
             <PageLink link="/about_MERN" />
           </div>
         </ul>

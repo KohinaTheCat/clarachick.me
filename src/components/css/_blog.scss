@@ -7,6 +7,19 @@
   text-align: center;
 }
 
+.slider {
+  align-content: center;
+  align-items: center;
+  padding: 40px;
+}
+
+.slick-prev:before {
+  color: $medG !important;
+}
+.slick-next:before {
+  color: $medG !important;
+}
+
 .return {
   position: absolute;
   @include HW(50px, 50px);
@@ -27,12 +40,14 @@
   position: relative;
   top: 150px;
 }
+
 .blog_subtitle {
   font-size: 30px;
   font-family: "Cutive Mono", monospace;
   position: relative;
   top: 150px;
 }
+
 .blog_body {
   padding-left: 5%;
   padding-right: 5%;
@@ -64,20 +79,33 @@
   .blog_header {
     height: 270px;
   }
+
+  .blog_title {
+    font-size: 45px;
+    top: 90px;
+  }
+
+  .blog_subtitle {
+    font-size: 35px;
+    top: 90px;
+  }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
   .blog_header {
     height: 250px;
   }
+
   .blog_title {
     font-size: 40px;
     top: 100px;
   }
+
   .blog_subtitle {
-    font-size: 325x;
+    font-size: 20px;
     top: 100px;
   }
+
   .return {
     @include HW(30px, 30px);
     &:hover {
