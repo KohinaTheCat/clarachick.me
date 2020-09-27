@@ -60,7 +60,7 @@ export class Main extends Component {
           </Heading>
           <GetLink
             name="Clara Chick Public Resume.pdf"
-            words="download my extended resume - updated august. 2020"
+            words="download my extended resume - updated sept. 2020"
           ></GetLink>
           {/* <div className="icon_row">
             <FontAwesomeIcon icon={faPython} size="lg" />

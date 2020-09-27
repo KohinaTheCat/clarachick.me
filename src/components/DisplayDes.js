@@ -6,6 +6,7 @@ import GetLink from "./links/GetLink";
 import PageLink from "./links/PageLink";
 import GithubLink from "./links/GithubLink";
 import Live from "./links/LiveLink";
+import { Link } from "evergreen-ui";
 
 //SHORTEN THIS. LESS TEXT
 export class DisplayDes extends Component {
@@ -32,14 +33,24 @@ export class DisplayDes extends Component {
     info: [
       <div className="list">
         <li>
-          <a target="_blank" rel="noopener noreferrer" href="https://utsc.calendar.utoronto.ca/course/csca08h3">
-            CSCA08 - Introduction to Computer Science I
-          </a>
+          <Link
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://utsc.calendar.utoronto.ca/course/csca08h3"
+          >
+            CSCA08
+          </Link>
+          {"  "}- Introduction to Computer Science I
         </li>
         <li>
-          <a target="_blank" rel="noopener noreferrer" href="https://utsc.calendar.utoronto.ca/course/csca08h3">
-            MGTA01 - Introduction to Business
-          </a>
+          <Link
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://utsc.calendar.utoronto.ca/course/mgta01h3"
+          >
+            MGTA01
+          </Link>
+          {"  "}- Introduction to Business
         </li>
       </div>,
       <div className="list">
@@ -160,10 +171,21 @@ export class DisplayDes extends Component {
     ],
   };
   side = {
-    titles: ["Coming Soon"],
-    status: ["currently a work in progress"],
-    body: [""],
-    info: [<div className=""></div>],
+    titles: ["DrawView"],
+    status: ["indefinite hiatus"],
+    body: ["React Native"],
+    info: [
+      <div>
+        <ul className="list">
+          An app to help people draw by guiding them using their phone camera.
+          The ultimate idea was to use OpenCV to automatically guide the user,
+          but I still haven't figured out how.
+          <br />
+          <br />
+          What currently is done would be a proto-type of those tracing apps.
+        </ul>
+      </div>,
+    ],
   };
   state = {
     titles: ["experience", "side projects", "other cool stuff"],
