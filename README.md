@@ -1,5 +1,3 @@
-![Landing](https://github.com/KohinaTheCat/clarachick.me/blob/master/src/imgs/readme/website.gif)
-
 ## Technologies Used
 - Create-React-App boiler plate
 - Firebase Storage to host my files 
