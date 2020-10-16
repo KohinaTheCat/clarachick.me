@@ -16,6 +16,20 @@
   padding: 40px;
 }
 
+.hoverIcon {
+  height: 45px;
+  width: 45px;
+  opacity: 0.5;
+  -webkit-transition: 0.25s ease-in-out;
+  transition: 0.25s ease-in-out;
+}
+
+.hoverIcon:hover {
+  opacity: 1;
+  -webkit-transition: 0.25s ease-in-out;
+  transition: 0.25s ease-in-out;
+}
+
 .icon {
   height: 45px;
   width: 45px;

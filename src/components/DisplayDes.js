@@ -7,30 +7,49 @@ import PageLink from "./links/PageLink";
 import GithubLink from "./links/GithubLink";
 import Live from "./links/LiveLink";
 import { Link } from "evergreen-ui";
+import ProjectSnippet from "./ProjectSnippet";
 
 //SHORTEN THIS. LESS TEXT
 export class DisplayDes extends Component {
   var;
   job = {
     titles: [
+      "MLH Fellow - Explorer Program",
       "Teaching Assistant",
       "Junior Full-Stack Developer",
       "Technology Associate",
       "Coding Camp Counselor",
     ],
     status: [
+      "Major Leauge Hacking",
       "University of Toronto",
       "Developer Student Club @ UTSC",
       "Staples",
       "Upper Canada College Summer Camps",
     ],
     body: [
+      "Oct. 2020 - Present",
       "Sept. 2020 - Present",
       "Nov. 2019 - May 2020",
       "Sept. 2017 - Jan. 2020",
       "June 2018 - July 2018",
     ],
     info: [
+      <div className="list">
+        <li>
+          <b>Chronolo-Geese</b> 🦆
+        </li>
+        Chronolo-Geese​ is a schedule conflict manager for students. It visually
+        shows what is the optimum time to meet up for group projects, study
+        sessions, or office hours with teachers.
+        <br />
+        <br />
+        <ProjectSnippet
+          dep="https://chronolo-geese.web.app/"
+          git="https://github.com/MLH-Fellowship/Chronolo-Geese"
+          dev="https://devpost.com/software/chronolo-geese"
+        />
+      </div>,
       <div className="list">
         <li>
           <Link

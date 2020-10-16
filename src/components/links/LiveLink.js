@@ -7,7 +7,7 @@ function LiveLink(props) {
       <img
         style={{ height: 30, width: 30 }}
         src={require("../../imgs/icons/live.png")}
-        className="icon"
+        className="hoverIcon"
         alt="live"
       />
     </Link>

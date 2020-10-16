@@ -7,7 +7,7 @@ function GithubLink(props) {
       <img
         style={{ height: 30, width: 30 }}
         src={require("../../imgs/icons/github.png")}
-        className="icon"
+        className="hoverIcon"
         alt="github"
       />
     </Link>

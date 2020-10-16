@@ -8,7 +8,7 @@ function PageLink(props) {
         title={props.link}
         style={{ height: 30, width: 30 }}
         src={require("../../imgs/about.png")}
-        className="icon"
+        className="hoverIcon"
         alt="about"
       ></img>
     </Link>
