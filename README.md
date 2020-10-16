@@ -5,6 +5,8 @@
 - HTML/Sass
 - Evergreen UI
 
-:rocket: deployed at https://clarachick.me/
+## :rocket: deployed at https://clarachick.me/
 
-<img align="center" src="./src/imgs/readme/website.gif">
+<p align="center">
+  <img  src="./src/imgs/readme/website.gif" alt="demo">
+</p>
