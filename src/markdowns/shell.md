@@ -1,10 +1,24 @@
-**the idea:** 
+#### **the project:** 
 
-in a group of three, use the Agile Scrum software development process to create a mock shell, to use with a mock file system. 
+Developed in a team of three using the the Agile Scrum methodology that implements core bash commands using features of object-orientated programming techniques and popular design patterns such as the Singleton and Injection design pattern.
 
-<br>
+<br/>
 
-**commands supported:** 
+Testing was done using JUnit 4. 
+
+<br/>
+
+Version control was handled using SVN for **CSCB07: Software Design**. 
+
+<br/>
+
+#### usage:
+
+Download project and run `JShell.java`
+
+<br/>
+
+#### **commands supported:** 
 
 you may redirect output to a file using `>` and `>>`
 

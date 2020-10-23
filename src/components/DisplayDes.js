@@ -14,14 +14,14 @@ export class DisplayDes extends Component {
   var;
   job = {
     titles: [
-      "MLH Fellow - Explorer Program",
+      "MLH Fellow - 🚀 Explorer Program",
       "Teaching Assistant",
-      "Junior Full-Stack Developer",
+      "💻 Junior Full-Stack Developer",
       "Technology Associate",
       "Coding Camp Counselor",
     ],
     status: [
-      "Major Leauge Hacking",
+      "Major League Hacking",
       "University of Toronto",
       "Developer Student Club @ UTSC",
       "Staples",
@@ -73,51 +73,34 @@ export class DisplayDes extends Component {
         </li>
       </div>,
       <div className="list">
-        <li>
-          Made a pseudo game lobby to practice Redux. In the game lobby there
-          are four players and each player can choose one of seven colours of
-          the rainbow, but not a colour that is chosen.
-        </li>
-        <li>
-          Learned the Gitflow Workflow to work on projects in teams with ease
-        </li>
+        <i>React, React Redux, Firebase, Git</i>
+        <br />
+        <br />
         <li>
           Programmed a Log-in and Sign-up Menu in ReactJS and implemented the
           Firebase Authentication SDK to allow account creation, email
-          verification and profile page customization
+          verification and profile page customization.
         </li>
         <li>
           Used Redux Forms to handle form state, and input validation and
-          MaterialUI to format the menu
+          MaterialUI to format the menu.
+        </li>
+        <li>
+          Made a pseudo game lobby to where four players can choose a unique
+          colour, from seven.
         </li>
       </div>,
       <div className="list">
-        <li>Learned in a fast pace enviroment.</li>
-        <li>Upsold warranty plans</li>
-        <li>
-          Provided customers with customized advice to satisfy their
-          technological requirements
-        </li>
-        <li>
-          Maintained a strong trust between customers to boost customer
-          satisfaction
-        </li>
-        <li>
-          Multitasked with different duties in an efficient way to prevent
-          customers from waiting for support
-        </li>
-        <li>
-          Communicated with other associates to ensure all customers are
-          assisted, and all other tasks are done by a given deadline
-        </li>
+        Provided customers with customized advice to satisfy their technological
+        requirements, while upselling warranty plans.
       </div>,
       <div className="list">
-        <li>Taught children the basic programming concepts in Python</li>
+        Taught children programming concepts in Python
       </div>,
     ],
   };
   proj = {
-    titles: ["clarachick.me", "Mock Bash Shell", "BudgetClara", "Kohina!Run"],
+    titles: ["🌎 clarachick.me", "Mock Bash Shell 🐚", "Budget 💸 Clara", "🎮 Kohina!Run"],
     status: [
       "updating!",
       "finished! - August 2020",
