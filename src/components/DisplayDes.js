@@ -14,9 +14,9 @@ export class DisplayDes extends Component {
   var;
   job = {
     titles: [
-      "MLH Fellow - 🚀 Explorer Program",
+      "MLH Fellow - Explorer Program",
       "Teaching Assistant",
-      "💻 Junior Full-Stack Developer",
+      "Junior Full-Stack Developer",
       "Technology Associate",
       "Coding Camp Counselor",
     ],
@@ -35,7 +35,7 @@ export class DisplayDes extends Component {
       "June 2018 - July 2018",
     ],
     info: [
-      <div className="list">
+      <ul className="list">
         <li>
           <b>Chronolo-Geese</b> 🦆
         </li>
@@ -49,8 +49,8 @@ export class DisplayDes extends Component {
           git="https://github.com/MLH-Fellowship/Chronolo-Geese"
           dev="https://devpost.com/software/chronolo-geese"
         />
-      </div>,
-      <div className="list">
+      </ul>,
+      <ul className="list">
         <li>
           <Link
             target="_blank"
@@ -71,37 +71,54 @@ export class DisplayDes extends Component {
           </Link>
           {"  "}- Introduction to Business
         </li>
-      </div>,
-      <div className="list">
-        <i>React, React Redux, Firebase, Git</i>
+      </ul>,
+      <ul className="list">
+        <i>
+          React, React Redux, Firebase Realtime Database, Firebase
+          Authentication, Git
+        </i>
         <br />
         <br />
         <li>
-          Programmed a Log-in and Sign-up Menu in ReactJS and implemented the
-          Firebase Authentication SDK to allow account creation, email
-          verification and profile page customization.
+          Made a pseudo game lobby to where four players can choose a unique
+          colour, from seven.
         </li>
         <li>
           Used Redux Forms to handle form state, and input validation and
           MaterialUI to format the menu.
         </li>
+        <br />
         <li>
-          Made a pseudo game lobby to where four players can choose a unique
-          colour, from seven.
+          Contributed to a web application that allows students to host their
+          projects and find group members.
         </li>
-      </div>,
-      <div className="list">
+        <li>
+          Programmed a Log-in and Sign-up Menu in React and implemented the
+          Firebase Authentication SDK to allow account creation, email
+          verification and profile page customization.
+        </li>
+        <br />
+        <div className="row">
+          <GithubLink url="https://github.com/liuzimin/utsc-project" />
+        </div>
+      </ul>,
+      <ul className="list">
         Provided customers with customized advice to satisfy their technological
         requirements, while upselling warranty plans.
-      </div>,
-      <div className="list">
-        Taught children programming concepts in Python
-      </div>,
+      </ul>,
+      <ul className="list">Taught children programming concepts in Python</ul>,
     ],
   };
   proj = {
-    titles: ["🌎 clarachick.me", "Mock Bash Shell 🐚", "Budget 💸 Clara", "🎮 Kohina!Run"],
+    titles: [
+      "UImpactify",
+      "clarachick.me",
+      "Mock Bash Shell",
+      "Budget Clara",
+      "Kohina!Run",
+    ],
     status: [
+      "currently a work in progress",
       "updating!",
       "finished! - August 2020",
       "currently a work in progress",
@@ -109,13 +126,29 @@ export class DisplayDes extends Component {
       "sporadic",
     ],
     body: [
+      "MongoDB, Express, Angular, Node",
       "Firebase Storage, React, Sass/Evergreen-UI",
       "Object Orientated Programming - Java",
-      "MERN Stack, React-vis",
+      "MongoDB, Express, React, Node, React-vis",
       <>an open world RPG in Visual Basic</>,
       "",
     ],
     info: [
+      <div>
+        <ul className="list">
+          Currently engaged as a full-stack developer in a team of seven using
+          the Agile Scrum methodology with Jira to develop UImpactify. I am
+          actively leading noivce members with full-stack developement.
+          <br />
+          <br />
+          UImpactify is an online learning platform that also gives a voice to
+          rising and current non-profits.
+          <br />
+          <br />
+          Source code will be provided once the project is done.
+          <br />
+        </ul>
+      </div>,
       <div>
         <ul className="list">
           This is just a personal website to show my experience and technical
