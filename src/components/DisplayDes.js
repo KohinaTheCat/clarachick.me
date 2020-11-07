@@ -49,6 +49,17 @@ export class DisplayDes extends Component {
           git="https://github.com/MLH-Fellowship/Chronolo-Geese"
           dev="https://devpost.com/software/chronolo-geese"
         />
+        <li>
+          🦖 <b>Rex Run</b>
+        </li>
+        Based around Google's Dinosaur Game, Rex Run is a 3D Endless Runner made in Unity.
+        <br />
+        <br />
+        <ProjectSnippet
+          dep="https://simmer.io/@Shiyuez/rex-run"
+          git="https://github.com/MLH-Fellowship/Rex-Run"
+          dev="https://devpost.com/software/rex-run"
+        />
       </ul>,
       <ul className="list">
         <li>
