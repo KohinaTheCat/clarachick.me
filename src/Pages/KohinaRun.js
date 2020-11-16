@@ -47,7 +47,6 @@ export default function Blog() {
           name="Kohina!Run.zip"
           words="download the playable game here"
         ></GetLink>
-        <i>unzip and run ` Kohina! Run.exe `</i>
       </Card>
     </div>
   );

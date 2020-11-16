@@ -224,11 +224,13 @@ export class DisplayDes extends Component {
           ingredients.
           <br />
           <br />
-          <PageLink link="/about_kohinarun" />
-          <GetLink
-            name="Kohina!Run.zip"
-            words="download the playable game here"
-          ></GetLink>
+          <div className="row">
+            <GetLink
+              name="Kohina!Run.zip"
+              words="download the playable game here"
+            ></GetLink>
+            <PageLink link="/about_kohinarun" />
+          </div>
         </ul>
       </div>,
     ],
