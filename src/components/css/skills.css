@@ -17,7 +17,7 @@
 
 #fade-in {
   opacity: 1;
-  max-height: 400px;
+  max-height: 2000px;
   -webkit-transition: all 0.3s linear;
   transition: all 0.3s linear;
   -webkit-transform: translateZ(0);
@@ -38,7 +38,10 @@
 @media screen and (max-width: 700px) {
   #fade-out {
     opacity: 1;
-    max-height: 400px;
+    max-height: 2000px;
+  }
+  .card:hover {
+    background-color: rgba(250, 227, 205, 0.3);
   }
 }
 /*# sourceMappingURL=skills.css.map */

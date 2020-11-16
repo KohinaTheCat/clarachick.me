@@ -4,14 +4,14 @@ import "./css/util.css";
 import { Link as L } from "react-router-dom";
 
 import Sky from "react-sky";
-import image1 from "../imgs/icon-kohina-opacity.png";
-import image2 from "../imgs/cat.png";
+import image1 from "../imgs/star.png";
+import image2 from "../imgs/flower.png";
 import image3 from "../imgs/heart.png";
 
 export default function Header(props) {
   return (
     <div className="Pane noselect">
-      <div className="blog_header" style={{ position: "absolute" }}>
+      <div className="blog_header" style={{ position: "absolute", top: "0px" }}>
         <Sky
           images={{
             0: image1,
@@ -19,8 +19,8 @@ export default function Header(props) {
             2: image3,
           }}
           how={50}
-          time={30} /* time of animation */
-          size={"100px"} /* size of the rendered images */
+          time={30}
+          size={"100px"}
           background={"#ddebf7"}
         />
       </div>

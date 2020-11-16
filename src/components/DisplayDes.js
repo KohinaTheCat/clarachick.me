@@ -63,6 +63,20 @@ export class DisplayDes extends Component {
           git="https://github.com/MLH-Fellowship/Rex-Run"
           dev="https://devpost.com/software/rex-run"
         />
+        <br />
+        <br />
+        <li>
+          <b>Simplify</b>
+        </li>
+        A Chrome Extension that summarizes any article you're reading in just
+        one click!
+        <br />
+        <br />
+        <ProjectSnippet
+          dep=""
+          git="https://github.com/MLH-Fellowship/Simplify"
+          dev="https://devpost.com/software/simplify-cvn8mg"
+        />
       </ul>,
       <ul className="list">
         <li>
@@ -237,7 +251,7 @@ export class DisplayDes extends Component {
     ],
   };
   state = {
-    titles: ["experience", "side projects", "other cool stuff"],
+    titles: ["experience", "side projects", "misc."],
     info: [this.job, this.proj, this.side],
   };
 

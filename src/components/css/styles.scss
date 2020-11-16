@@ -1,6 +1,10 @@
 @import url("https://fonts.googleapis.com/css?family=Lobster&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Lobster|Passion+One&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Lato&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merienda+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Libre+Barcode+39&display=swap");
+// font-family: 'Libre Barcode 39', cursive;
+@import url("https://fonts.googleapis.com/css2?family=Jomolhari&display=swap");
 
 @import "./variables";
 @import "./footer";
@@ -29,6 +33,7 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 .Background {
@@ -40,6 +45,9 @@ html {
   width: 100%;
   height: 400px;
   text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .Card_main {
@@ -68,6 +76,14 @@ html {
   margin-right: 100px;
 }
 
+#bar{
+  top: -10%;
+  opacity: 0.5;
+  position: relative;
+  font-size: 30px;
+  font-family: 'Libre Barcode 39', cursive;
+}
+
 .Card2 {
   background-color: $title1;
 }
@@ -87,83 +103,61 @@ html {
 #first,
 #second,
 #third {
-  @include titleStyle(150px, 80px, absolute, 0%);
-  font-family: "Lobster", cursive;
+  white-space: nowrap;
+  font-size: 180px;
+  position: absolute;
+  font-family: "Jomolhari", serif;
+  text-align: center;
+  width: 100%;
 }
 
 #greeting {
   @include titleStyle(30px, 70px, absolute, 10%);
-  font-family: "Passion One", cursive;
+  font-family: "Jomolhari", serif;
 }
 #sent {
-  @include titleStyle(30px, 250px, relative, 0px);
-  font-family: "Passion One", cursive;
+  position: relative;
+  top: 35%;
+  font-family: "Jomolhari", serif;
 }
 
 #f,
 #t {
   @include titleStyle(30px, 40%, absolute, 10%);
-  font-family: "Lobster", cursive;
+  font-family: "Jomolhari", serif;
   color: black;
 }
 
 #s {
   @include titleStyle(90px, 40%, relative, 0px);
-  font-family: "Lobster", cursive;
+  font-family: "Jomolhari", serif;
   color: black;
 }
 
 #first {
-  @include leftCol(20px, $darkG);
+  color: $darkG;
 }
 #second {
-  @include leftCol(30px, $medG);
+  color: $medG;
+  padding-left: 4px;
 }
 #third {
-  @include leftCol(40px, white);
+  color: white;
+  padding-left: 8px;
 }
 
-@media screen and (min-width: 1500px) {
-  #first,
-  #second,
-  #third {
-    padding-left: 0%;
-  }
-  #first {
-    left: 100px;
-  }
-  #second {
-    left: 110px;
-  }
-  #third {
-    left: 120px;
-  }
-}
-
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1000px) {
   .Pane {
     height: 300px;
   }
   #first,
   #second,
   #third {
-    @include titleStyle(90px, 80px, absolute, 0%);
-  }
-  #first {
-    left: 30px;
-  }
-  #second {
-    left: 35px;
-  }
-  #third {
-    left: 40px;
+    font-size: 120px;
   }
   #greeting,
   #sent {
     font-size: 20px;
-  }
-  #sent {
-    top: 70%;
   }
   .Nav {
     height: 50px;
@@ -188,26 +182,30 @@ html {
   }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 800px) {
   #first,
   #second,
   #third {
-    @include titleStyle(50px, 90px, absolute, 100%);
-  }
-  #first {
-    left: 19%;
-  }
-  #second {
-    left: 20%;
-  }
-  #third {
-    left: 21%;
-  }
-  #sent {
-    top: 60%;
+    margin-top: 5%;
+    font-size: 90px;
   }
   .Card {
     @include HW(180px, 180px);
     margin-right: 0;
+  }
+  #second {
+    padding-left: 2px;
+  }
+  #third {
+    padding-left: 4px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #first,
+  #second,
+  #third {
+    margin-top: 5%;
+    font-size: 50px;
   }
 }

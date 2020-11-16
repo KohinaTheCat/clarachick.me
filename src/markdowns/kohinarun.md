@@ -2,8 +2,6 @@
 
 the file uploaded is not the final product, rather the most recent version I managed to recover.
 
-*disclaimer:* Kohina, does not run.
-
 <br>
 
 **the idea:** 

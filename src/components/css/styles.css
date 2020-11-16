@@ -1,6 +1,9 @@
 @import url("https://fonts.googleapis.com/css?family=Lobster&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Lobster|Passion+One&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Lato&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merienda+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Libre+Barcode+39&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jomolhari&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap");
 .footer {
   display: -ms-grid;
@@ -259,14 +262,12 @@ li {
   font-size: 50px;
   font-family: "Cutive Mono", monospace;
   position: relative;
-  top: 150px;
 }
 
 .blog_subtitle {
   font-size: 30px;
   font-family: "Cutive Mono", monospace;
   position: relative;
-  top: 150px;
 }
 
 .blog_body {
@@ -342,6 +343,7 @@ li {
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 .Background {
@@ -363,6 +365,16 @@ html {
   width: 100%;
   height: 400px;
   text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .Card_main {
@@ -398,6 +410,14 @@ html {
   margin-right: 100px;
 }
 
+#bar {
+  top: -10%;
+  opacity: 0.5;
+  position: relative;
+  font-size: 30px;
+  font-family: 'Libre Barcode 39', cursive;
+}
+
 .Card2 {
   background-color: #fae3cd;
 }
@@ -423,11 +443,12 @@ html {
 #first,
 #second,
 #third {
-  font-size: 150px;
-  top: 80px;
+  white-space: nowrap;
+  font-size: 180px;
   position: absolute;
-  left: 0%;
-  font-family: "Lobster", cursive;
+  font-family: "Jomolhari", serif;
+  text-align: center;
+  width: 100%;
 }
 
 #greeting {
@@ -435,15 +456,13 @@ html {
   top: 70px;
   position: absolute;
   left: 10%;
-  font-family: "Passion One", cursive;
+  font-family: "Jomolhari", serif;
 }
 
 #sent {
-  font-size: 30px;
-  top: 250px;
   position: relative;
-  left: 0px;
-  font-family: "Passion One", cursive;
+  top: 35%;
+  font-family: "Jomolhari", serif;
 }
 
 #f,
@@ -452,7 +471,7 @@ html {
   top: 40%;
   position: absolute;
   left: 10%;
-  font-family: "Lobster", cursive;
+  font-family: "Jomolhari", serif;
   color: black;
 }
 
@@ -461,69 +480,36 @@ html {
   top: 40%;
   position: relative;
   left: 0px;
-  font-family: "Lobster", cursive;
+  font-family: "Jomolhari", serif;
   color: black;
 }
 
 #first {
-  left: 20px;
   color: #234361;
 }
 
 #second {
-  left: 30px;
   color: #425a70;
+  padding-left: 4px;
 }
 
 #third {
-  left: 40px;
   color: white;
+  padding-left: 8px;
 }
 
-@media screen and (min-width: 1500px) {
-  #first,
-  #second,
-  #third {
-    padding-left: 0%;
-  }
-  #first {
-    left: 100px;
-  }
-  #second {
-    left: 110px;
-  }
-  #third {
-    left: 120px;
-  }
-}
-
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1000px) {
   .Pane {
     height: 300px;
   }
   #first,
   #second,
   #third {
-    font-size: 90px;
-    top: 80px;
-    position: absolute;
-    left: 0%;
-  }
-  #first {
-    left: 30px;
-  }
-  #second {
-    left: 35px;
-  }
-  #third {
-    left: 40px;
+    font-size: 120px;
   }
   #greeting,
   #sent {
     font-size: 20px;
-  }
-  #sent {
-    top: 70%;
   }
   .Nav {
     height: 50px;
@@ -554,31 +540,32 @@ html {
   }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 800px) {
   #first,
   #second,
   #third {
-    font-size: 50px;
-    top: 90px;
-    position: absolute;
-    left: 100%;
-  }
-  #first {
-    left: 19%;
-  }
-  #second {
-    left: 20%;
-  }
-  #third {
-    left: 21%;
-  }
-  #sent {
-    top: 60%;
+    margin-top: 5%;
+    font-size: 90px;
   }
   .Card {
     height: 180px;
     width: 180px;
     margin-right: 0;
+  }
+  #second {
+    padding-left: 2px;
+  }
+  #third {
+    padding-left: 4px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #first,
+  #second,
+  #third {
+    margin-top: 5%;
+    font-size: 50px;
   }
 }
 /*# sourceMappingURL=styles.css.map */

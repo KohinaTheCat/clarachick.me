@@ -8,14 +8,9 @@ import GetLink from "../components/links/GetLink";
 import ScrollToTop from "../components/ScrollToTop";
 import Footer from "../components/Footer";
 
-// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-// import { faPython, faJava, faReact } from "@fortawesome/free-brands-svg-icons";
-// import { faPython } from '@fortawesome/free-solid-svg-icons'
-
-//MAKE COMPONENT LATER
 import Sky from "react-sky";
-import myImage from "../imgs/icon-kohina-opacity.png";
-import image2 from "../imgs/cat.png";
+import image1 from "../imgs/star.png";
+import image2 from "../imgs/flower.png";
 import image3 from "../imgs/heart.png";
 
 //Clara Chick
@@ -28,21 +23,20 @@ export class Main extends Component {
           <div className="Pane" style={{ position: "absolute" }}>
             <Sky
               images={{
-                0: myImage,
+                0: image1,
                 1: image2,
                 2: image3,
               }}
               how={40}
-              time={20} /* time of animation */
-              size={"100px"} /* size of the rendered images */
+              time={20}
+              size={"100px"}
               background={"#ddebf7"}
             />
           </div>
-
-          {/* <div id="greeting">Cheers, it's</div> */}
           <div id="first">Clara Chick</div>
           <div id="second">Clara Chick</div>
           <div id="third">Clara Chick</div>
+          {/* <div id="bar">clara chick</div> */}
           <div id="sent">
             <Footer />
           </div>
@@ -62,11 +56,6 @@ export class Main extends Component {
             name="Clara Chick Public Resume.pdf"
             words="download my one page resume - updated oct. 2020"
           ></GetLink>
-          {/* <div className="icon_row">
-            <FontAwesomeIcon icon={faPython} size="lg" />
-            <FontAwesomeIcon icon={faJava} size="lg"/>
-            <FontAwesomeIcon icon={faReact} size="lg"/>
-          </div> */}
         </Card>
 
         <DisplayDes></DisplayDes>

@@ -4,11 +4,17 @@ import { Link } from "evergreen-ui";
 function ProjectSnippet(props) {
   return (
     <>
-      <i>Deployed at:</i>{" "}
-      <Link target="_blank" rel="noopener noreferrer" href={props.dep}>
-        {props.dep}
-      </Link>
-      <br />
+      {props.dep === "" ? (
+        ""
+      ) : (
+        <>
+          <i>Deployed at:</i>{" "}
+          <Link target="_blank" rel="noopener noreferrer" href={props.dep}>
+            {props.dep}
+          </Link>
+          <br />
+        </>
+      )}
       <i>Github:</i>{" "}
       <Link target="_blank" rel="noopener noreferrer" href={props.git}>
         {props.git}
