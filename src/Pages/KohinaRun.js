@@ -45,7 +45,7 @@ export default function Blog() {
 
         <GetLink
           name="Kohina!Run.zip"
-          words="download the playable game here"
+          words=""
         ></GetLink>
       </Card>
     </div>

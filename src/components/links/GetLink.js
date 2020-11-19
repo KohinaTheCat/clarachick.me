@@ -42,12 +42,16 @@ export default function GetLink(props) {
 
   return (
     <Link onClick={getLink} color="blue">
-      <img
-        style={{ height: 30, width: 30 }}
-        src={require("../../imgs/icons/download.png")}
-        className="hoverIcon"
-        alt="github"
-      />
+      {props.words === "" ? (
+        <img
+          style={{ height: 30, width: 30 }}
+          src={require("../../imgs/icons/download.png")}
+          className="hoverIcon"
+          alt="github"
+        />
+      ) : (
+        <h4>{props.words}</h4>
+      )}
     </Link>
   );
 }

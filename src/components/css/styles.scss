@@ -3,7 +3,6 @@
 @import url("https://fonts.googleapis.com/css?family=Lato&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Merienda+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Libre+Barcode+39&display=swap");
-// font-family: 'Libre Barcode 39', cursive;
 @import url("https://fonts.googleapis.com/css2?family=Jomolhari&display=swap");
 
 @import "./variables";
@@ -76,12 +75,12 @@ html {
   margin-right: 100px;
 }
 
-#bar{
+#bar {
   top: -10%;
   opacity: 0.5;
   position: relative;
   font-size: 30px;
-  font-family: 'Libre Barcode 39', cursive;
+  font-family: "Libre Barcode 39", cursive;
 }
 
 .Card2 {
@@ -111,16 +110,6 @@ html {
   width: 100%;
 }
 
-#greeting {
-  @include titleStyle(30px, 70px, absolute, 10%);
-  font-family: "Jomolhari", serif;
-}
-#sent {
-  position: relative;
-  top: 35%;
-  font-family: "Jomolhari", serif;
-}
-
 #f,
 #t {
   @include titleStyle(30px, 40%, absolute, 10%);
@@ -146,39 +135,57 @@ html {
   padding-left: 8px;
 }
 
+#greeting {
+  @include titleStyle(30px, 70px, absolute, 10%);
+  font-family: "Jomolhari", serif;
+}
+
+#sent {
+  position: relative;
+  top: 35%;
+  font-family: "Jomolhari", serif;
+}
+
 @media screen and (max-width: 1000px) {
   .Pane {
     height: 300px;
   }
+
   #first,
   #second,
   #third {
     font-size: 120px;
   }
+
   #greeting,
   #sent {
     font-size: 20px;
   }
-  .Nav {
-    height: 50px;
-  }
-  .Card {
-    @include HW(200px, 200px);
-    margin-right: 0;
-  }
+
   #f {
     font-size: 25px;
   }
+
   .Card_main {
     display: flex;
     flex-direction: column;
   }
+
   .Intro_Card {
     font-family: "Lato", sans-serif;
     background-color: #fef6f6;
     text-align: center;
     width: 90%;
     padding: 10px;
+  }
+
+  .Nav {
+    height: 50px;
+  }
+
+  .Card {
+    @include HW(200px, 200px);
+    margin-right: 0;
   }
 }
 
@@ -189,13 +196,16 @@ html {
     margin-top: 5%;
     font-size: 90px;
   }
+
   .Card {
     @include HW(180px, 180px);
     margin-right: 0;
   }
+
   #second {
     padding-left: 2px;
   }
+  
   #third {
     padding-left: 4px;
   }

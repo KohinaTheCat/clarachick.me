@@ -225,10 +225,7 @@ export class DisplayDes extends Component {
           <br />
           <br />
           <div className="row">
-            <GetLink
-              name="Kohina!Run.zip"
-              words="download the playable game here"
-            ></GetLink>
+            <GetLink name="Kohina!Run.zip" words=""></GetLink>
             <PageLink link="/about_kohinarun" />
           </div>
         </ul>

@@ -49,6 +49,12 @@ li {
   font-size: 15px;
 }
 
+.Description {
+  align-items: center;
+  font-size: 15px;
+  width: 100%;
+}
+
 @media screen and (max-width: 900px) {
   .rowC {
     display: flex;
@@ -75,10 +81,4 @@ li {
     padding-left: 0px;
     font-size: 15px;
   }
-}
-
-.Description {
-  align-items: center;
-  font-size: 15px;
-  width: 100%;
 }

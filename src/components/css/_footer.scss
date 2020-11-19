@@ -35,6 +35,12 @@
   }
 }
 
+.center {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
 @media screen and (max-width: 900px) {
   .icon {
     @include HW(35px, 35px);
@@ -53,10 +59,4 @@
   .cont {
     padding: 20px;
   }
-}
-
-.center {
-  align-items: center;
-  display: flex;
-  justify-content: center;
 }
