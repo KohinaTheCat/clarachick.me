@@ -193,7 +193,6 @@ li {
 }
 
 .error_img {
-  background-image: url("../../imgs/sad.png");
   height: 512px;
   width: 512px;
   opacity: 0.5;

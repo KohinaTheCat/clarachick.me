@@ -1,15 +1,14 @@
 import React, { Component } from "react";
 import "./css/skills.css";
-import { Card } from "evergreen-ui";
+import { Card, Link } from "evergreen-ui";
 import Skills from "../components/Skills";
 import GetLink from "./links/GetLink";
 import PageLink from "./links/PageLink";
 import GithubLink from "./links/GithubLink";
 import Live from "./links/LiveLink";
-import { Link } from "evergreen-ui";
 import ProjectSnippet from "./ProjectSnippet";
 
-//SHORTEN THIS. LESS TEXT
+//TODO: shorten this.
 export class DisplayDes extends Component {
   var;
   job = {
@@ -37,7 +36,7 @@ export class DisplayDes extends Component {
     info: [
       <ul className="list">
         <li>
-          <b>Chronolo-Geese</b> 🦆
+          <b>Chronolo-Geese</b>
         </li>
         Chronolo-Geese​ is a schedule conflict manager for students. It visually
         shows what is the optimum time to meet up for group projects, study
@@ -52,7 +51,7 @@ export class DisplayDes extends Component {
         <br />
         <br />
         <li>
-          🦖 <b>Rex Run</b>
+          <b>Rex Run</b>
         </li>
         Based around Google's Dinosaur Game, Rex Run is a 3D Endless Runner made
         in Unity.
@@ -139,7 +138,7 @@ export class DisplayDes extends Component {
   };
   proj = {
     titles: [
-      "UImpactify",
+      "U Impactify",
       "clarachick.me",
       "Mock Bash Shell",
       "Budget Clara",

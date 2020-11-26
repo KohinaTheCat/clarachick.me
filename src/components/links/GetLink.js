@@ -2,7 +2,7 @@ import React from "react";
 import * as firebase from "firebase";
 import { Link } from "evergreen-ui";
 
-//PUT INTO A .ENV FILE
+//TODO: put into an .env
 var firebaseConfig = {
   apiKey: "AIzaSyA4muyCH1SqNLZxQssRVCyUurL1xwO4HgA",
   authDomain: "website-27f8b.firebaseapp.com",

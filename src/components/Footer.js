@@ -37,6 +37,15 @@ function Footer() {
           </a>
         </div>
         <div target="_blank" rel="noopener noreferrer" className="cont">
+          <a href="https://devpost.com/KohinaTheCat">
+            <img
+              src={require("../imgs/icons/devpost.png")}
+              className="icon"
+              alt="github"
+            ></img>
+          </a>
+        </div>
+        <div target="_blank" rel="noopener noreferrer" className="cont">
           <a href="mailto:clara.chick@mail.utoronto.ca">
             <img
               src={require("../imgs/icons/mail.png")}

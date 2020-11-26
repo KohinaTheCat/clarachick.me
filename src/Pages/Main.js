@@ -9,9 +9,9 @@ import ScrollToTop from "../components/ScrollToTop";
 import Footer from "../components/Footer";
 
 import Sky from "react-sky";
-import image1 from "../imgs/star.png";
-import image2 from "../imgs/flower.png";
-import image3 from "../imgs/heart.png";
+import image1 from "../imgs/header/star.png";
+import image2 from "../imgs/header/flower.png";
+import image3 from "../imgs/header/heart.png";
 
 //Clara Chick
 export class Main extends Component {
@@ -36,7 +36,6 @@ export class Main extends Component {
           <div id="first">Clara Chick</div>
           <div id="second">Clara Chick</div>
           <div id="third">Clara Chick</div>
-          {/* <div id="bar">clara chick</div> */}
           <div id="sent">
             <Footer />
           </div>

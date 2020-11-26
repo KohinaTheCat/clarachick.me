@@ -4,9 +4,9 @@ import "./css/util.css";
 import { Link as L } from "react-router-dom";
 
 import Sky from "react-sky";
-import image1 from "../imgs/star.png";
-import image2 from "../imgs/flower.png";
-import image3 from "../imgs/heart.png";
+import image1 from "../imgs/header/star.png";
+import image2 from "../imgs/header/flower.png";
+import image3 from "../imgs/header/heart.png";
 
 export default function Header(props) {
   return (
@@ -26,7 +26,7 @@ export default function Header(props) {
       </div>
       <L to="/">
         <img
-          src={require("../imgs/return.png")}
+          src={require("../imgs/icons/return.png")}
           style={{ opacity: 0.7 }}
           alt="home"
           className="return"
