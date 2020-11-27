@@ -8,7 +8,6 @@
 @import "./variables";
 @import "./footer";
 @import "./display";
-@import "./_ohno";
 @import "./blog";
 
 @mixin flexCenter {
@@ -126,10 +125,12 @@ html {
 #first {
   color: $darkG;
 }
+
 #second {
   color: $medG;
   padding-left: 4px;
 }
+
 #third {
   color: white;
   padding-left: 8px;

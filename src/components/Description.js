@@ -1,6 +1,8 @@
 import React, { useState } from "react";
+
 import "./css/styles.css";
 import "./css/skills.css";
+
 import { Card } from "evergreen-ui";
 
 function Description(props) {
@@ -18,12 +20,10 @@ function Description(props) {
       <div className="Description">
         <br />
         <div className="body-titles">
-          <div className="col">
-            <div className="title">{props.title}</div>
-            <div className="body">{props.body}</div>
-          </div>
-          <div className="status">{props.status}</div>
+          <div className="title">{props.title}</div>
+          {props.status}
         </div>
+        <div className="body">{props.body}</div>
         {click ? (
           <div className="info" id="fade-in">
             {props.info}
@@ -33,7 +33,7 @@ function Description(props) {
             {props.info}
           </div>
         )}
-        <br></br>
+        <br/>
       </div>
     </Card>
   );

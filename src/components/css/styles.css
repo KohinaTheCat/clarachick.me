@@ -49,6 +49,18 @@
   transition: 0.25s ease-in-out;
 }
 
+.center {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 @media screen and (max-width: 900px) {
   .icon {
     height: 35px;
@@ -67,18 +79,6 @@
   .cont {
     padding: 20px;
   }
-}
-
-.center {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
 .Container {
@@ -139,10 +139,6 @@ li {
   font-weight: 600;
 }
 
-.status {
-  font-size: 17px;
-}
-
 .body {
   font-size: 15px;
 }
@@ -150,6 +146,13 @@ li {
 .info {
   padding-top: 10px;
   font-size: 15px;
+}
+
+.Description {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
 }
 
 @media screen and (max-width: 900px) {
@@ -170,9 +173,6 @@ li {
   .title {
     font-size: 22px;
   }
-  .status {
-    font-size: 15px;
-  }
   .body {
     font-size: 15px;
     padding-left: 0%;
@@ -181,37 +181,6 @@ li {
     top: 0;
     padding-left: 0px;
     font-size: 15px;
-  }
-}
-
-.Description {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  font-size: 15px;
-  width: 100%;
-}
-
-.error_img {
-  height: 512px;
-  width: 512px;
-  opacity: 0.5;
-  margin-top: 10%;
-  background-size: 100% 100%;
-}
-
-@media screen and (max-width: 900px) {
-  .error_img {
-    height: 312px;
-    width: 312px;
-    background-size: 100% 100%;
-  }
-}
-
-@media screen and (max-width: 400px) {
-  .error_img {
-    height: 112px;
-    width: 112px;
   }
 }
 
@@ -414,7 +383,7 @@ html {
   opacity: 0.5;
   position: relative;
   font-size: 30px;
-  font-family: 'Libre Barcode 39', cursive;
+  font-family: "Libre Barcode 39", cursive;
 }
 
 .Card2 {
@@ -450,20 +419,6 @@ html {
   width: 100%;
 }
 
-#greeting {
-  font-size: 30px;
-  top: 70px;
-  position: absolute;
-  left: 10%;
-  font-family: "Jomolhari", serif;
-}
-
-#sent {
-  position: relative;
-  top: 35%;
-  font-family: "Jomolhari", serif;
-}
-
 #f,
 #t {
   font-size: 30px;
@@ -497,6 +452,20 @@ html {
   padding-left: 8px;
 }
 
+#greeting {
+  font-size: 30px;
+  top: 70px;
+  position: absolute;
+  left: 10%;
+  font-family: "Jomolhari", serif;
+}
+
+#sent {
+  position: relative;
+  top: 35%;
+  font-family: "Jomolhari", serif;
+}
+
 @media screen and (max-width: 1000px) {
   .Pane {
     height: 300px;
@@ -509,14 +478,6 @@ html {
   #greeting,
   #sent {
     font-size: 20px;
-  }
-  .Nav {
-    height: 50px;
-  }
-  .Card {
-    height: 200px;
-    width: 200px;
-    margin-right: 0;
   }
   #f {
     font-size: 25px;
@@ -536,6 +497,14 @@ html {
     text-align: center;
     width: 90%;
     padding: 10px;
+  }
+  .Nav {
+    height: 50px;
+  }
+  .Card {
+    height: 200px;
+    width: 200px;
+    margin-right: 0;
   }
 }
 

@@ -2,16 +2,14 @@ import React, { Component } from "react";
 import "../components/css/styles.css";
 import "../components/css/util.css";
 
+import { images } from "../components/constants/Images";
 import { DisplayDes } from "../components/DisplayDes";
-import { Card, Heading } from "evergreen-ui";
 import GetLink from "../components/links/GetLink";
 import ScrollToTop from "../components/ScrollToTop";
 import Footer from "../components/Footer";
 
+import { Card, Heading } from "evergreen-ui";
 import Sky from "react-sky";
-import image1 from "../imgs/header/star.png";
-import image2 from "../imgs/header/flower.png";
-import image3 from "../imgs/header/heart.png";
 
 //Clara Chick
 export class Main extends Component {
@@ -23,9 +21,9 @@ export class Main extends Component {
           <div className="Pane" style={{ position: "absolute" }}>
             <Sky
               images={{
-                0: image1,
-                1: image2,
-                2: image3,
+                0: images.image1,
+                1: images.image2,
+                2: images.image3,
               }}
               how={40}
               time={20}
@@ -57,7 +55,7 @@ export class Main extends Component {
           ></GetLink>
         </Card>
 
-        <DisplayDes></DisplayDes>
+        <DisplayDes/>
       </div>
     );
   }
