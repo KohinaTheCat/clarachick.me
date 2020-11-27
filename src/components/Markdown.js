@@ -1,36 +1,35 @@
 import marked from "marked";
-import React from 'react';
-import PropTypes from 'prop-types';
-import ReactMarkdown from 'react-markdown';
-import CodeBlock from './CodeBlock';
-
+import React from "react";
+import PropTypes from "prop-types";
+import ReactMarkdown from "react-markdown";
+import CodeBlock from "./CodeBlock";
 
 class Markdown extends React.PureComponent {
-    state = {markdown: ""}
+  state = { markdown: "" };
 
-    componentDidMount(){
-        const readmePath = require("../markdowns/" + this.props.md);
+  componentDidMount() {
+    const readmePath = require("../markdowns/" + this.props.md);
 
-        fetch(readmePath)
-          .then(response => {
-            return response.text()
-          })
-          .then(text => {
-            this.setState({
-              markdown: marked(text)
-            })
-          })
-    }
+    fetch(readmePath)
+      .then((response) => {
+        return response.text();
+      })
+      .then((text) => {
+        this.setState({
+          markdown: marked(text),
+        });
+      });
+  }
 
   render() {
     return (
-        <ReactMarkdown
-          source={this.state.markdown}
-          renderers={{
-            code: CodeBlock,
-          }}
-          escapeHtml={false}
-        />
+      <ReactMarkdown
+        source={this.state.markdown}
+        renderers={{
+          code: CodeBlock,
+        }}
+        escapeHtml={false}
+      />
     );
   }
 }
@@ -38,6 +37,5 @@ class Markdown extends React.PureComponent {
 Markdown.propTypes = {
   value: PropTypes.string.isRequired,
 };
-
 
 export default Markdown;

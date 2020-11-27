@@ -16,10 +16,14 @@ function Description(props) {
       onClick={() => setClick(!click)}
     >
       <div className="Description">
-        <br></br>
-        <div className="title">{props.title}</div>
-        <div className="status">{props.status}</div>
-        <div className="body">{props.body}</div>
+        <br />
+        <div className="body-titles">
+          <div className="col">
+            <div className="title">{props.title}</div>
+            <div className="body">{props.body}</div>
+          </div>
+          <div className="status">{props.status}</div>
+        </div>
         {click ? (
           <div className="info" id="fade-in">
             {props.info}

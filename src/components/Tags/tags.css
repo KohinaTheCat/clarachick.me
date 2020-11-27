@@ -1,0 +1,20 @@
+.tag {
+  border-radius: 1rem;
+  padding: 0.5rem;
+  height: 100%;
+  text-align: center;
+  display: inline-block;
+  margin: 0.5rem 0.5rem 0px 0px;
+}
+
+.s {
+  background-color: #ddebf7;
+  color: #2e5eaa;
+}
+
+.w {
+  border-radius: 0rem;
+  background-color: rgba(241, 171, 134, 0.3);
+  color: black;
+  font-size: 1.2rem;
+}

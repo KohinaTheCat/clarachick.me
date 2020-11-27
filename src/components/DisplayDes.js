@@ -7,6 +7,7 @@ import PageLink from "./links/PageLink";
 import GithubLink from "./links/GithubLink";
 import Live from "./links/LiveLink";
 import ProjectSnippet from "./ProjectSnippet";
+import Tags from "./Tags/Tags";
 
 //TODO: shorten this.
 export class DisplayDes extends Component {
@@ -19,14 +20,40 @@ export class DisplayDes extends Component {
       "Technology Associate",
       "Coding Camp Counselor",
     ],
-    status: [
-      "Major League Hacking",
-      "University of Toronto",
-      "Developer Student Club @ UTSC",
-      "Staples",
-      "Upper Canada College Summer Camps",
-    ],
     body: [
+      <>
+        <Tags tag="Major League Hacking" type="w" />
+        <br />
+        {[
+          "React",
+          "Unity3D",
+          "Machine Learning",
+          "Firebase",
+          "MongoDB",
+          "Node",
+        ].map((tag) => (
+          <Tags key={tag} type="s" tag={tag} />
+        ))}
+      </>,
+      <>
+        <Tags tag="University of Toronto" type="w" />
+        <br />
+        <Tags type="s" tag="Python" />
+      </>,
+      <>
+        <Tags tag="Developer Student Club @ UTSC" type="w" />
+        <br />
+        <Tags type="s" tag="React" />
+        <Tags type="s" tag="Firebase" />
+      </>,
+      <Tags tag="Staples" type="w" />,
+      <>
+        <Tags tag="Upper Canada College Summer Camps" type="w" />
+        <br />
+        <Tags type="s" tag="Python" />
+      </>,
+    ],
+    status: [
       "Oct. 2020 - Present",
       "Sept. 2020 - Present",
       "Nov. 2019 - May 2020",
@@ -145,20 +172,39 @@ export class DisplayDes extends Component {
       "Kohina!Run",
     ],
     status: [
-      "currently a work in progress",
+      "work in progress",
       "updating!",
-      "finished! - August 2020",
-      "currently a work in progress",
-      "finished! - May 2018",
+      "finished!",
+      "work in progress",
+      "finished!",
       "sporadic",
     ],
     body: [
-      "MongoDB, Express, Angular, Node",
-      "Firebase Storage, React, Sass/Evergreen-UI",
-      "Object Orientated Programming - Java",
-      "MongoDB, Express, React, Node, React-vis",
-      <>an open world RPG in Visual Basic</>,
-      "",
+      <>
+        {["MongoDB", "Express", "Angular", "Node"].map((tag) => (
+          <Tags key={tag} type="s" tag={tag} />
+        ))}
+      </>,
+      <>
+        {["Firebase Storage", "React", "Sass", "Evergreen-UI"].map((tag) => (
+          <Tags key={tag} type="s" tag={tag} />
+        ))}
+      </>,
+      <>
+        {["Java", "Object Orientated Programming"].map((tag) => (
+          <Tags key={tag} type="s" tag={tag} />
+        ))}
+      </>,
+      <>
+        {["MongoDB", "Express", "React", "Node", "React-vis"].map((tag) => (
+          <Tags key={tag} type="s" tag={tag} />
+        ))}
+      </>,
+      <>
+        {["Visual Basic"].map((tag) => (
+          <Tags key={tag} type="s" tag={tag} />
+        ))}
+      </>,
     ],
     info: [
       <div>
@@ -249,7 +295,7 @@ export class DisplayDes extends Component {
     ],
   };
   state = {
-    titles: ["experience", "side projects", "misc."],
+    titles: ["experience", "side projects" /*, "misc."*/],
     info: [this.job, this.proj, this.side],
   };
 

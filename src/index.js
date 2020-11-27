@@ -2,11 +2,11 @@ import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
 import * as serviceWorker from "./serviceWorker";
-import Website from "./Pages/Website";
-import M from "./Pages/MERN";
-import KohinaRun from "./Pages/KohinaRun";
-import MockShell from "./Pages/Shell";
-import Main from "./Pages/Main";
+import Website from "./pages/Website";
+import M from "./pages/MERN";
+import KohinaRun from "./pages/KohinaRun";
+import MockShell from "./pages/Shell";
+import Main from "./pages/Main";
 import ScrollToTop from "./components/ScrollToTop";
 
 import {
