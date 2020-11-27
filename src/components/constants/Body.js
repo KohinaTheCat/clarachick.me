@@ -18,36 +18,35 @@ export const job = {
   ],
   body: [
     <>
-      <Tags tag="Major League Hacking" type="w" />
+      <Tags tag={["Major League Hacking"]} type="w" />
       <br />
-      {[
-        "React",
-        "Unity3D",
-        "Machine Learning",
-        "Firebase",
-        "MongoDB",
-        "Node",
-      ].map((tag) => (
-        <Tags key={tag} type="s" tag={tag} />
-      ))}
+      <Tags
+        type="s"
+        tag={[
+          "React",
+          "Unity3D",
+          "Machine Learning",
+          "Firebase",
+          "MongoDB",
+          "Node",
+        ]}
+      />
     </>,
     <>
-      <Tags tag="University of Toronto" type="w" />
+      <Tags tag={["University of Toronto"]} type="w" />
       <br />
-      <Tags type="s" tag="Python" />
+      <Tags type="s" tag={["Python"]} />
     </>,
     <>
-      <Tags tag="Developer Student Club @ UTSC" type="w" />
+      <Tags tag={["Developer Student Club @ UTSC"]} type="w" />
       <br />
-      <Tags type="s" tag="React" />
-      <Tags type="s" tag="Redux" />
-      <Tags type="s" tag="Firebase" />
+      <Tags type="s" tag={["React", "Redux", "Firebase"]} />
     </>,
-    <Tags tag="Staples" type="w" />,
+    <Tags tag={["Staples"]} type="w" />,
     <>
-      <Tags tag="Upper Canada College Summer Camps" type="w" />
+      <Tags tag={["Upper Canada College Summer Camps"]} type="w" />
       <br />
-      <Tags type="s" tag="Python" />
+      <Tags type="s" tag={["Python"]} />
     </>,
   ],
   status: [
@@ -172,31 +171,17 @@ export const proj = {
     "sporadic",
   ],
   body: [
-    <>
-      {["MongoDB", "Express", "Angular", "Node"].map((tag) => (
-        <Tags key={tag} type="s" tag={tag} />
-      ))}
-    </>,
-    <>
-      {["Firebase Storage", "React", "Sass", "Evergreen-UI"].map((tag) => (
-        <Tags key={tag} type="s" tag={tag} />
-      ))}
-    </>,
-    <>
-      {["Java", "Object Orientated Programming", "Agile"].map((tag) => (
-        <Tags key={tag} type="s" tag={tag} />
-      ))}
-    </>,
-    <>
-      {["MongoDB", "Express", "React", "Node", "React-vis"].map((tag) => (
-        <Tags key={tag} type="s" tag={tag} />
-      ))}
-    </>,
-    <>
-      {["Visual Basic"].map((tag) => (
-        <Tags key={tag} type="s" tag={tag} />
-      ))}
-    </>,
+    <Tags type="s" tag={["MongoDB", "Express", "Angular", "Node"]} />,
+    <Tags
+      type="s"
+      tag={["Firebase Storage", "React", "Sass", "Evergreen-UI"]}
+    />,
+    <Tags type="s" tag={["Java", "Object Orientated Programming", "Agile"]} />,
+    <Tags
+      type="s"
+      tag={["MongoDB", "Express", "React", "Node", "React-vis"]}
+    />,
+    <Tags type="s" tag={["Visual Basic"]} />,
   ],
   info: [
     <div>

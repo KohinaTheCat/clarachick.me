@@ -4,11 +4,19 @@ import "./tags.css";
 function Tags(props) {
   return (
     <>
-      {props.type === "s" ? (
-        <div className="tag s">{props.tag}</div>
-      ) : (
-        <div className="tag w">{props.tag}</div>
-      )}
+      {props.tag.map((tag, i) => (
+        <>
+          {props.type === "s" ? (
+            <div key={tag + i + "s"} className="tag s">
+              {tag}
+            </div>
+          ) : (
+            <div key={tag + i + "w"} className="tag w">
+              {tag}
+            </div>
+          )}
+        </>
+      ))}
     </>
   );
 }

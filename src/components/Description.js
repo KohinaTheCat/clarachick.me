@@ -33,7 +33,7 @@ function Description(props) {
             {props.info}
           </div>
         )}
-        <br/>
+        <br />
       </div>
     </Card>
   );

@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import "./css/skills.css";
 import { Card } from "evergreen-ui";
 import Skills from "../components/Skills";
-import {job, side, proj} from './constants/Body'
+import { job, side, proj } from "./constants/Body";
 
 //TODO: shorten this.
 export class DisplayDes extends Component {
