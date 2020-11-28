@@ -245,10 +245,6 @@ li {
   margin-bottom: 60px;
 }
 
-.blog_body li {
-  list-style: none;
-}
-
 .blog_card {
   background-color: #fdf8f3;
   display: -webkit-box;

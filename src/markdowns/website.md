@@ -1,19 +1,23 @@
-**technical details of the current version:** 
+### Technologies Used
 
-- ‣ the animated header and footer was done with the use of the use of [Sky](https://github.com/lucagez/sky)
-- ‣ implemented React Router
-- ‣ implemented ReactMarkdown, such that pages can be typed as .md files 
-- ‣ download links are generated on demand using Firebase Storage
-- ‣ used SASS to achieve a simple, yet visually pleasing website design that is responsive and unique
-- ‣ learned the fundamentals of React.js such as state, hooks, and component reusability
+<hr/>
 
-<br>
+- [React](https://reactjs.org/)
+- [Sky](https://github.com/lucagez/sky) for the animated header
+- [ReactMarkdown](https://github.com/remarkjs/react-markdown) to parse `.md` and display them on the webpage 
+- [Github Markdown Stylesheet](https://gist.github.com/tuzz/3331384) to style the parsed markdown
+- [Firebase Storage](https://firebase.google.com/docs/storage) to host and create download links for files
 
-**todos:**
+```js
+{
+    "version": 3.0,
+    "description": "personal website"
+}
+```
 
-- ‣ dynamic page generation
-- ‣ redesign for scalibility 
-- ‣ fix css lag
-- ‣ i apologize to all mobile users on /kohinarun
+<br/>
 
-<br>
+> Feel free to add an issue on my GitHub repo.
+
+<br/>
+

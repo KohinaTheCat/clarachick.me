@@ -1,5 +1,6 @@
 import React from "react";
 import "../components/css/styles.css";
+import "../components/css/markdowns.css";
 
 import GetLink from "../components/links/GetLink";
 import { Card } from "evergreen-ui";
@@ -35,13 +36,13 @@ export default function Blog() {
       <Card className="blog_card blog_body">
         <Markdown md="kohinarun.md"></Markdown>
 
-        <Card className="slider">
+        {/* <Card className="slider">
           <Slider {...settings} className="imgs">
             {imgs.map((img, i) => (
               <img className="imgs" src={img} alt={i}></img>
             ))}
           </Slider>
-        </Card>
+        </Card> */}
 
         <GetLink
           name="Kohina!Run.zip"
