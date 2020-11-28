@@ -14,8 +14,8 @@
     "description": "personal website"
 }
 ```
-
-### deployed at https://clarachick.me/
+<br/>
+#### deployed at https://clarachick.me/
 
 <p align="center">
   <img  src="./src/imgs/readme/website.gif" alt="demo">
