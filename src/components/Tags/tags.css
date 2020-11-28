@@ -1,4 +1,4 @@
-.tag {
+.tags {
   border-radius: 1rem;
   padding: 0.5rem;
   height: 100%;
@@ -15,6 +15,6 @@
 .w {
   border-radius: 0rem;
   background-color: rgba(241, 171, 134, 0.3);
-  color: black;
+  color: #942911;
   font-size: 1.2rem;
 }

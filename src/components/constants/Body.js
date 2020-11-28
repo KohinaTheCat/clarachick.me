@@ -29,6 +29,7 @@ export const job = {
           "Firebase",
           "MongoDB",
           "Node",
+          "Express"
         ]}
       />
     </>,

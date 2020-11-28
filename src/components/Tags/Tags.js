@@ -7,11 +7,11 @@ function Tags(props) {
       {props.tag.map((tag, i) => (
         <>
           {props.type === "s" ? (
-            <div key={tag + i + "s"} className="tag s">
+            <div key={tag + i + "s"} className="tags s">
               {tag}
             </div>
           ) : (
-            <div key={tag + i + "w"} className="tag w">
+            <div key={tag + i + "w"} className="tags w">
               {tag}
             </div>
           )}
