@@ -18,10 +18,6 @@
 
 #### deployed at https://clarachick.me/
 
-<p align="center">
-  <img  src="./src/imgs/readme/website.gif" alt="demo">
-</p>
-
 <br/>
 
 > Feel free to add an issue on my GitHub repo.
