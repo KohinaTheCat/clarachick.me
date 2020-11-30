@@ -21,6 +21,8 @@ The main goal of this project was to learn the MERN Stack, more specifically bac
 - [MaterialUI](https://material-ui.com/)
 - [React-vis](https://uber.github.io/react-vis/)
 
+<br/>
+
 ```js
 {
     "version": 0.0,

@@ -29,7 +29,7 @@ export const job = {
           "Firebase",
           "MongoDB",
           "Node",
-          "Express"
+          "Express",
         ]}
       />
     </>,
@@ -59,13 +59,12 @@ export const job = {
   ],
   info: [
     <ul className="list">
-      <li>
-        <b>Chronolo-Geese</b>
-      </li>
+      <b>Chronolo-Geese</b>
+      <br />
+      <br />
       Chronolo-Geese​ is a schedule conflict manager for students. It visually
       shows what is the optimum time to meet up for group projects, study
       sessions, or office hours with teachers.
-      <br />
       <br />
       <ProjectSnippet
         dep="https://chronolo-geese.web.app/"
@@ -73,13 +72,11 @@ export const job = {
         dev="https://devpost.com/software/chronolo-geese"
       />
       <br />
+      <b>Rex Run</b>
       <br />
-      <li>
-        <b>Rex Run</b>
-      </li>
+      <br />
       Based around Google's Dinosaur Game, Rex Run is a 3D Endless Runner made
       in Unity.
-      <br />
       <br />
       <ProjectSnippet
         dep="https://simmer.io/@Shiyuez/rex-run"
@@ -87,13 +84,11 @@ export const job = {
         dev="https://devpost.com/software/rex-run"
       />
       <br />
+      <b>Simplify</b>
       <br />
-      <li>
-        <b>Simplify</b>
-      </li>
+      <br />
       A Chrome Extension that summarizes any article you're reading in just one
       click!
-      <br />
       <br />
       <ProjectSnippet
         dep=""
@@ -132,7 +127,6 @@ export const job = {
         Used Redux Forms to handle form state, and input validation and
         MaterialUI to format the menu.
       </li>
-      <br />
       <li>
         Contributed to a web application that allows students to host their
         projects and find group members.
@@ -151,7 +145,10 @@ export const job = {
       Provided customers with customized advice to satisfy their technological
       requirements, while upselling warranty plans.
     </ul>,
-    <ul className="list">Taught children programming concepts in Python</ul>,
+    <ul className="list">
+      Supervised and taught around 15 to 20 different campers programming about
+      coding concepts using Python, on a weekly basis
+    </ul>,
   ],
 };
 

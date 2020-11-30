@@ -3,7 +3,7 @@ import { Link } from "evergreen-ui";
 
 function ProjectSnippet(props) {
   return (
-    <>
+    <blockquote>
       {props.dep === "" ? (
         ""
       ) : (
@@ -24,7 +24,7 @@ function ProjectSnippet(props) {
       <Link target="_blank" rel="noopener noreferrer" href={props.dev}>
         {props.dev}
       </Link>
-    </>
+    </blockquote>
   );
 }
 

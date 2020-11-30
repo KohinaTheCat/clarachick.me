@@ -8,6 +8,8 @@
 - [Github Markdown Stylesheet](https://gist.github.com/tuzz/3331384) to style the parsed markdown
 - [Firebase Storage](https://firebase.google.com/docs/storage) to host and create download links for files
 
+<br/>
+
 ```js
 {
     "version": 3.0,
