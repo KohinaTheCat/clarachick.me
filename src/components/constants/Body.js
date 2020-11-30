@@ -30,6 +30,7 @@ export const job = {
           "MongoDB",
           "Node",
           "Express",
+          "Electron",
         ]}
       />
     </>,
@@ -94,6 +95,18 @@ export const job = {
         dep=""
         git="https://github.com/MLH-Fellowship/Simplify"
         dev="https://devpost.com/software/simplify-cvn8mg"
+      />
+      <br />
+      <b>Boiler.js</b>
+      <br />
+      <br />
+      Boiler.js is a desktop application for software developers to quickly find
+      and set up boilerplates on their local machine in under a minute
+      <br />
+      <ProjectSnippet
+        dep=""
+        git="https://github.com/MLH-Fellowship/Boiler.js"
+        dev="https://devpost.com/software/boiler-js"
       />
     </ul>,
     <ul className="list">
