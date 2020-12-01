@@ -7,27 +7,27 @@ import { Card } from "evergreen-ui";
 import Markdown from "../components/Markdown";
 import Header from "../components/Header";
 
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+// import Slider from "react-slick";
+// import "slick-carousel/slick/slick.css";
+// import "slick-carousel/slick/slick-theme.css";
 
 export default function Blog() {
-  var settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    fade: true,
-    onSwipe: true,
-    slidesToShow: 1,
-    centerMode: true,
-    autoplay: true,
-    slidesToScroll: 1,
-  };
+  // var settings = {
+  //   dots: true,
+  //   infinite: true,
+  //   speed: 500,
+  //   fade: true,
+  //   onSwipe: true,
+  //   slidesToShow: 1,
+  //   centerMode: true,
+  //   autoplay: true,
+  //   slidesToScroll: 1,
+  // };
 
-  var imgs = [];
-  for (let i = 1; i < 8; i++) {
-    imgs.push(require(`../imgs/kohinarun/${i}.png`));
-  }
+  // var imgs = [];
+  // for (let i = 1; i < 8; i++) {
+  //   imgs.push(require(`../imgs/kohinarun/${i}.png`));
+  // }
 
   return (
     <div className="Background">
