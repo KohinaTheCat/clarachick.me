@@ -182,7 +182,7 @@ export const proj = {
     "sporadic",
   ],
   body: [
-    <Tags type="s" tag={["MongoDB", "Express", "Angular", "Node"]} />,
+    <Tags type="s" tag={["MongoDB", "GridFS", "Express", "Angular", "Node", "Socket.io", "Chart.js", "Figma", "Agile"]} />,
     <Tags
       type="s"
       tag={["Firebase Storage", "React", "Sass", "Evergreen-UI"]}
@@ -197,16 +197,18 @@ export const proj = {
   info: [
     <div>
       <ul className="list">
-        Currently engaged as a full-stack developer in a team of seven using the
-        Agile Scrum methodology with Jira to develop UImpactify. I am actively
-        leading noivce members with full-stack developement.
+        Engaged as a full-stack developer in a team of seven using the
+        Agile Scrum methodology with Jira to develop U Impactify.
         <br />
         <br />
         UImpactify is an online learning platform that also gives a voice to
         rising and current non-profits.
         <br />
         <br />
-        Source code will be provided once the project is done.
+        <div className="row">
+          <GithubLink url="https://github.com/KohinaTheCat/U-Impactify" />
+          <Live url="https://uimpactify.herokuapp.com/" />
+        </div>
         <br />
       </ul>
     </div>,
