@@ -21,6 +21,7 @@
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  font-weight: 600;
 }
 
 #p {

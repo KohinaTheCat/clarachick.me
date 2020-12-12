@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "../css/skills.css";
-import { Card } from "evergreen-ui";
+import { Card, Heading } from "evergreen-ui";
 import Category from "./Category";
 import { experience, projects } from "../constants/Body";
 
@@ -28,7 +28,9 @@ export class Categories extends Component {
                 key={title}
                 margin={24}
               >
-                <div id="f">{title}</div>
+                <Heading size={600} is="h3" id="f">
+                  {title}
+                </Heading>
               </Card>
             </Card>
 

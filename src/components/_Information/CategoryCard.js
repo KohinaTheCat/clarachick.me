@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import "../css/styles.css";
 import "../css/skills.css";
 
-import { Card } from "evergreen-ui";
+import { Card, Heading, Text } from "evergreen-ui";
 
 function CategoryCard(props) {
   const [click, setClick] = useState(false);
@@ -20,10 +20,12 @@ function CategoryCard(props) {
       <div className="Description">
         <br />
         <div className="body-titles">
-          <div className="title">{props.heading}</div>
-          {props.status}
+          <Heading is="h1" size={700} className="title">
+            {props.heading}
+          </Heading>
+          <Text>{props.status}</Text>
         </div>
-        <div className="body">{props.tags}</div>
+        <Text className="body">{props.tags}</Text>
         {click ? (
           <div className="info" id="fade-in">
             {props.body}

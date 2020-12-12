@@ -3,7 +3,6 @@
 @import url("https://fonts.googleapis.com/css?family=Lato&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Merienda+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Libre+Barcode+39&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Jomolhari&display=swap");
 
 @import "./variables";
 @import "./footer";
@@ -59,7 +58,6 @@ html {
 }
 
 .Intro_Card {
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   background-color: $introBack;
   font-size: 15px;
   text-align: center;
@@ -71,15 +69,6 @@ html {
 .Card {
   position: relative;
   @include HW(225px, 225px);
-  margin-right: 100px;
-}
-
-#bar {
-  top: -10%;
-  opacity: 0.5;
-  position: relative;
-  font-size: 30px;
-  font-family: "Libre Barcode 39", cursive;
 }
 
 .Card2 {
@@ -104,21 +93,27 @@ html {
   white-space: nowrap;
   font-size: 180px;
   position: absolute;
-  font-family: "Jomolhari", serif;
+  font-family: "Lobster", serif;
   text-align: center;
   width: 100%;
 }
 
 #f,
+#t,
+#s {
+  font-style: italic;
+  font-weight: 600;
+  opacity: 0.7;
+}
+
+#f,
 #t {
   @include titleStyle(30px, 40%, absolute, 10%);
-  font-family: "Jomolhari", serif;
   color: black;
 }
 
 #s {
   @include titleStyle(90px, 40%, relative, 0px);
-  font-family: "Jomolhari", serif;
   color: black;
 }
 
@@ -138,13 +133,13 @@ html {
 
 #greeting {
   @include titleStyle(30px, 70px, absolute, 10%);
-  font-family: "Jomolhari", serif;
+  // font-family: "Jomolhari", serif;
 }
 
 #sent {
   position: relative;
   top: 35%;
-  font-family: "Jomolhari", serif;
+  // font-family: "Jomolhari", serif;
 }
 
 @media screen and (max-width: 1000px) {
@@ -206,7 +201,7 @@ html {
   #second {
     padding-left: 2px;
   }
-  
+
   #third {
     padding-left: 4px;
   }
