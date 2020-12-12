@@ -1,30 +1,16 @@
 import React from "react";
 import { Link } from "evergreen-ui";
+import DevpostLink from "./links/DevpostLink";
+import LiveLink from "./links/LiveLink";
+import GithubLink from "./links/GithubLink";
 
 function ProjectSnippet(props) {
   return (
-    <blockquote>
-      {props.dep === "" ? (
-        ""
-      ) : (
-        <>
-          <i>Deployed at:</i>{" "}
-          <Link target="_blank" rel="noopener noreferrer" href={props.dep}>
-            {props.dep}
-          </Link>
-          <br />
-        </>
-      )}
-      <i>Github:</i>{" "}
-      <Link target="_blank" rel="noopener noreferrer" href={props.git}>
-        {props.git}
-      </Link>
-      <br />
-      <i>Devpost:</i>{" "}
-      <Link target="_blank" rel="noopener noreferrer" href={props.dev}>
-        {props.dev}
-      </Link>
-    </blockquote>
+    <div className="row">
+      <GithubLink url={props.git} />
+      {props.dep !== "" ? <LiveLink url={props.dep} /> : ""}
+      <DevpostLink url={props.dev} />
+    </div>
   );
 }
 

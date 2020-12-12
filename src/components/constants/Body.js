@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Link } from "evergreen-ui";
+import { Link, Heading } from "evergreen-ui";
 import GetLink from "../links/GetLink";
 import PageLink from "../links/PageLink";
 import GithubLink from "../links/GithubLink";
@@ -33,12 +33,16 @@ const mlh = {
   ),
   body: (
     <ul className="list">
-      <b>Chronolo-Geese</b>
-      <br />
-      <br />
-      Chronolo-Geese​ is a schedule conflict manager for students. It visually
-      shows what is the optimum time to meet up for group projects, study
-      sessions, or office hours with teachers.
+      <blockquote>
+        <Heading is="h3" size={560}>
+          Chronolo-Geese
+        </Heading>
+      </blockquote>
+      <div className="tab">
+        Chronolo-Geese​ is a schedule conflict manager for students. It visually
+        shows what is the optimum time to meet up for group projects, study
+        sessions, or office hours with teachers.
+      </div>
       <br />
       <ProjectSnippet
         dep="https://chronolo-geese.web.app/"
@@ -46,11 +50,16 @@ const mlh = {
         dev="https://devpost.com/software/chronolo-geese"
       />
       <br />
-      <b>Rex Run</b>
       <br />
-      <br />
-      Based around Google's Dinosaur Game, Rex Run is a 3D Endless Runner made
-      in Unity.
+      <blockquote>
+        <Heading is="h3" size={560}>
+          Rex Run
+        </Heading>
+      </blockquote>
+      <div className="tab">
+        Based around Google's Dinosaur Game, Rex Run is a 3D Endless Runner made
+        in Unity.
+      </div>
       <br />
       <ProjectSnippet
         dep="https://simmer.io/@Shiyuez/rex-run"
@@ -58,11 +67,16 @@ const mlh = {
         dev="https://devpost.com/software/rex-run"
       />
       <br />
-      <b>Simplify</b>
       <br />
-      <br />
-      A Chrome Extension that summarizes any article you're reading in just one
-      click!
+      <blockquote>
+        <Heading is="h3" size={560}>
+          Simplify
+        </Heading>
+      </blockquote>
+      <div className="tab">
+        A Chrome Extension that summarizes any article you're reading in just
+        one click!
+      </div>
       <br />
       <ProjectSnippet
         dep=""
@@ -70,11 +84,16 @@ const mlh = {
         dev="https://devpost.com/software/simplify-cvn8mg"
       />
       <br />
-      <b>Boiler.js</b>
       <br />
-      <br />
-      Boiler.js is a desktop application for software developers to quickly find
-      and set up boilerplates on their local machine in under a minute
+      <blockquote>
+        <Heading is="h3" size={560}>
+          Boiler.js
+        </Heading>
+      </blockquote>
+      <div className="tab">
+        Boiler.js is a desktop application for software developers to quickly
+        find and set up boilerplates on their local machine in under a minute
+      </div>
       <br />
       <ProjectSnippet
         dep=""
@@ -150,7 +169,6 @@ const dsc = {
         Firebase Authentication SDK to allow account creation, email
         verification and profile page customization.
       </li>
-      <br />
       <div className="row">
         <GithubLink url="https://github.com/liuzimin/utsc-project" />
       </div>
