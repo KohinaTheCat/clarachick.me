@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "evergreen-ui";
 import DevpostLink from "./links/DevpostLink";
 import LiveLink from "./links/LiveLink";
 import GithubLink from "./links/GithubLink";
