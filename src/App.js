@@ -1,6 +1,6 @@
 import React, { version } from "react";
 import Main from "./Pages/Main";
-import ScrolltoTop from "./components/ScrollToTop";
+import ScrolltoTop from "./components/utils/ScrollToTop";
 
 function App() {
   return (

@@ -4,7 +4,7 @@ import "../components/css/markdowns.css";
 
 import GetLink from "../components/links/GetLink";
 import { Card } from "evergreen-ui";
-import Markdown from "../components/Markdown";
+import Markdown from "../components/markdown/Markdown";
 import Header from "../components/Header";
 
 // import Slider from "react-slick";

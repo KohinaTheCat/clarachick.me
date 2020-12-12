@@ -3,9 +3,9 @@ import "../components/css/styles.css";
 import "../components/css/util.css";
 
 import { images } from "../components/constants/Images";
-import { DisplayDes } from "../components/DisplayDes";
+import { Categories } from "../components/_Information/Categories";
 import GetLink from "../components/links/GetLink";
-import ScrollToTop from "../components/ScrollToTop";
+import ScrollToTop from "../components/utils/ScrollToTop";
 import Footer from "../components/Footer";
 
 import { Card, Heading } from "evergreen-ui";
@@ -55,7 +55,7 @@ export class Main extends Component {
           ></GetLink>
         </Card>
 
-        <DisplayDes/>
+        <Categories />
       </div>
     );
   }

@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 
-import "./css/styles.css";
-import "./css/skills.css";
+import "../css/styles.css";
+import "../css/skills.css";
 
 import { Card } from "evergreen-ui";
 
-function Description(props) {
+function CategoryCard(props) {
   const [click, setClick] = useState(false);
 
   return (
@@ -20,17 +20,17 @@ function Description(props) {
       <div className="Description">
         <br />
         <div className="body-titles">
-          <div className="title">{props.title}</div>
+          <div className="title">{props.heading}</div>
           {props.status}
         </div>
-        <div className="body">{props.body}</div>
+        <div className="body">{props.tags}</div>
         {click ? (
           <div className="info" id="fade-in">
-            {props.info}
+            {props.body}
           </div>
         ) : (
           <div className="info" id="fade-out">
-            {props.info}
+            {props.body}
           </div>
         )}
         <br />
@@ -39,4 +39,4 @@ function Description(props) {
   );
 }
 
-export default Description;
+export default CategoryCard;

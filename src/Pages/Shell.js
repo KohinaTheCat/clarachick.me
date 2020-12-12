@@ -3,7 +3,7 @@ import "../components/css/styles.css";
 
 import { Card } from "evergreen-ui";
 import GithubLink from "../components/links/GithubLink";
-import Markdown from "../components/Markdown";
+import Markdown from "../components/markdown/Markdown";
 import Header from "../components/Header";
 
 export default function Shell() {

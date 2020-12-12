@@ -8,7 +8,7 @@ class Markdown extends React.PureComponent {
   state = { markdown: "" };
 
   componentDidMount() {
-    const readmePath = require("../markdowns/" + this.props.md);
+    const readmePath = require("../../markdowns/" + this.props.md);
 
     fetch(readmePath)
       .then((response) => {

@@ -1,17 +1,13 @@
 import React, { Component } from "react";
-import "./css/skills.css";
+import "../css/skills.css";
 import { Card } from "evergreen-ui";
-import Skills from "../components/Skills";
-import { job, side, proj } from "./constants/Body";
+import Category from "./Category";
+import { experience, projects } from "../constants/Body";
 
-//TODO: shorten this.
-export class DisplayDes extends Component {
-  job = job;
-  side = side;
-  proj = proj;
+export class Categories extends Component {
   state = {
     titles: ["experience", "side projects" /*, "misc."*/],
-    info: [this.job, this.proj, this.side],
+    info: [experience, projects, this.side],
   };
 
   render() {
@@ -35,8 +31,9 @@ export class DisplayDes extends Component {
                 <div id="f">{title}</div>
               </Card>
             </Card>
+
             <div id="p">
-              <Skills info={this.state.info[index]}></Skills>
+              <Category info={this.state.info[index]}></Category>
             </div>
           </Card>
         ))}
@@ -45,4 +42,4 @@ export class DisplayDes extends Component {
   }
 }
 
-export default DisplayDes;
+export default Categories;

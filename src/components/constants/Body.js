@@ -8,15 +8,11 @@ import Live from "../links/LiveLink";
 import ProjectSnippet from "../ProjectSnippet";
 import Tags from "../tags/Tags";
 
-export const job = {
-  titles: [
-    "MLH Fellow - Explorer Program",
-    "Teaching Assistant",
-    "Junior Full-Stack Developer",
-    "Technology Associate",
-    "Coding Camp Counselor",
-  ],
-  body: [
+// experience
+const mlh = {
+  heading: "MLH Fellow - Explorer Program",
+  status: "Oct. 2020 - Present",
+  tags: (
     <>
       <Tags tag={["Major League Hacking"]} type="w" />
       <br />
@@ -33,32 +29,9 @@ export const job = {
           "Electron",
         ]}
       />
-    </>,
-    <>
-      <Tags tag={["University of Toronto"]} type="w" />
-      <br />
-      <Tags type="s" tag={["Python"]} />
-    </>,
-    <>
-      <Tags tag={["Developer Student Club @ UTSC"]} type="w" />
-      <br />
-      <Tags type="s" tag={["React", "Redux", "Firebase"]} />
-    </>,
-    <Tags tag={["Staples"]} type="w" />,
-    <>
-      <Tags tag={["Upper Canada College Summer Camps"]} type="w" />
-      <br />
-      <Tags type="s" tag={["Python"]} />
-    </>,
-  ],
-  status: [
-    "Oct. 2020 - Present",
-    "Sept. 2020 - Present",
-    "Nov. 2019 - May 2020",
-    "Sept. 2017 - Jan. 2020",
-    "June 2018 - July 2018",
-  ],
-  info: [
+    </>
+  ),
+  body: (
     <ul className="list">
       <b>Chronolo-Geese</b>
       <br />
@@ -108,7 +81,21 @@ export const job = {
         git="https://github.com/MLH-Fellowship/Boiler.js"
         dev="https://devpost.com/software/boiler-js"
       />
-    </ul>,
+    </ul>
+  ),
+};
+
+const ta = {
+  heading: "Teaching Assistant",
+  status: "Sept. 2020 - Present",
+  tags: (
+    <>
+      <Tags tag={["University of Toronto"]} type="w" />
+      <br />
+      <Tags type="s" tag={["Python"]} />
+    </>
+  ),
+  body: (
     <ul className="list">
       <li>
         <Link
@@ -130,7 +117,21 @@ export const job = {
         </Link>
         {"  "}- Introduction to Business
       </li>
-    </ul>,
+    </ul>
+  ),
+};
+
+const dsc = {
+  heading: "Junior Full-Stack Developer",
+  status: "Nov. 2019 - May 2020",
+  tags: (
+    <>
+      <Tags tag={["Developer Student Club @ UTSC"]} type="w" />
+      <br />
+      <Tags type="s" tag={["React", "Redux", "Firebase"]} />
+    </>
+  ),
+  body: (
     <ul className="list">
       <li>
         Made a pseudo game lobby to where four players can choose a unique
@@ -153,56 +154,69 @@ export const job = {
       <div className="row">
         <GithubLink url="https://github.com/liuzimin/utsc-project" />
       </div>
-    </ul>,
+    </ul>
+  ),
+};
+
+const staples = {
+  heading: "Technology Associate",
+  status: "Sept. 2017 - Jan. 2020",
+  tags: <Tags tag={["Staples"]} type="w" />,
+  body: (
     <ul className="list">
       Provided customers with customized advice to satisfy their technological
       requirements, while upselling warranty plans.
-    </ul>,
+    </ul>
+  ),
+};
+
+const ucc = {
+  heading: "Coding Camp Counselor",
+  status: "June 2018 - July 2018",
+  tags: (
+    <>
+      <Tags tag={["Upper Canada College Summer Camps"]} type="w" />
+      <br />
+      <Tags type="s" tag={["Python"]} />
+    </>
+  ),
+  body: (
     <ul className="list">
       Supervised and taught around 15 to 20 different campers programming about
       coding concepts using Python, on a weekly basis
-    </ul>,
-  ],
+    </ul>
+  ),
 };
 
-export const proj = {
-  titles: [
-    "U Impactify",
-    "clarachick.me",
-    "Mock Bash Shell",
-    "Budget Clara",
-    "Kohina!Run",
-  ],
-  status: [
-    "work in progress",
-    "updating!",
-    "finished!",
-    "work in progress",
-    "finished!",
-    "sporadic",
-  ],
-  body: [
-    <Tags type="s" tag={["MongoDB", "GridFS", "Express", "Angular", "Node", "Socket.io", "Chart.js", "Figma", "Agile"]} />,
+// projects
+const uimpactify = {
+  heading: "U Impactify",
+  status: "finished!",
+  tags: (
     <Tags
       type="s"
-      tag={["Firebase Storage", "React", "Sass", "Evergreen-UI"]}
-    />,
-    <Tags type="s" tag={["Java", "Object Orientated Programming", "Agile"]} />,
-    <Tags
-      type="s"
-      tag={["MongoDB", "Express", "React", "Node", "React-vis"]}
-    />,
-    <Tags type="s" tag={["Visual Basic"]} />,
-  ],
-  info: [
+      tag={[
+        "MongoDB",
+        "GridFS",
+        "Express",
+        "Angular",
+        "Node",
+        "Socket.io",
+        "Chart.js",
+        "Figma",
+        "Agile",
+      ]}
+    />
+  ),
+  body: (
     <div>
       <ul className="list">
-        Engaged as a full-stack developer in a team of seven using the
-        Agile Scrum methodology with Jira to develop U Impactify.
+        Engaged as a full-stack developer in a team of seven using the Agile
+        Scrum methodology with Jira to develop U Impactify.
         <br />
         <br />
-        UImpactify is an online learning platform that also gives a voice to
-        rising and current non-profits.
+        U Impactify, the E-Learning platform dedicated to serve the social
+        purpose sector. ​
         <br />
         <br />
         <div className="row">
@@ -211,7 +225,20 @@ export const proj = {
         </div>
         <br />
       </ul>
-    </div>,
+    </div>
+  ),
+};
+
+const website = {
+  heading: "clarachick.me",
+  status: "updating!",
+  tags: (
+    <Tags
+      type="s"
+      tag={["Firebase Storage", "React", "Sass", "Evergreen-UI"]}
+    />
+  ),
+  body: (
     <div>
       <ul className="list">
         This is just a personal website to show my experience and technical
@@ -224,7 +251,17 @@ export const proj = {
           <PageLink link="/about_website" />
         </div>
       </ul>
-    </div>,
+    </div>
+  ),
+};
+
+const shell = {
+  heading: "Mock Bash Shell",
+  status: "finished!",
+  tags: (
+    <Tags type="s" tag={["Java", "Object Orientated Programming", "Agile"]} />
+  ),
+  body: (
     <div>
       <ul className="list">
         Developed in a team of three using the the Agile Scrum methodology that
@@ -236,7 +273,17 @@ export const proj = {
           <PageLink link="/about_mockshell" />
         </div>
       </ul>
-    </div>,
+    </div>
+  ),
+};
+
+const budgetclara = {
+  heading: "Budget Clara",
+  status: "work in progress",
+  tags: (
+    <Tags type="s" tag={["MongoDB", "Express", "React", "Node", "React-vis"]} />
+  ),
+  body: (
     <div>
       <ul className="list">
         Made a REST API with the MERN stack to allow the user to create, read,
@@ -247,10 +294,18 @@ export const proj = {
         <div className="row">
           <GithubLink url="https://github.com/KohinaTheCat/mern-practice" />
           <Live url="https://budget-clara.herokuapp.com/" />
-          <PageLink link="/about_MERN" />
+          <PageLink link="/about_budgetclara" />
         </div>
       </ul>
-    </div>,
+    </div>
+  ),
+};
+
+const kohinarun = {
+  heading: "Kohina!Run",
+  status: "finished!",
+  tags: <Tags type="s" tag={["Visual Basic"]} />,
+  body: (
     <div>
       <ul className="list">
         Kohina!Run is an open world RPG where you play as a girl who travels
@@ -264,24 +319,11 @@ export const proj = {
           <PageLink link="/about_kohinarun" />
         </div>
       </ul>
-    </div>,
-  ],
+    </div>
+  ),
 };
 
-export const side = {
-  titles: ["DrawView"],
-  status: ["indefinite hiatus"],
-  body: ["React Native"],
-  info: [
-    <div>
-      <ul className="list">
-        An app to help people draw by guiding them using their phone camera. The
-        ultimate idea was to use OpenCV to automatically guide the user, but I
-        still haven't figured out how.
-        <br />
-        <br />
-        What currently is done would be a proto-type of those tracing apps.
-      </ul>
-    </div>,
-  ],
-};
+// NEW
+export const projects = [uimpactify, website, shell, budgetclara, kohinarun];
+
+export const experience = [mlh, ta, dsc, staples, ucc];

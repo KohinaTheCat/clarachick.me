@@ -4,7 +4,7 @@ import "../components/css/styles.css";
 import { Card } from "evergreen-ui";
 import GitHubLink from "../components/links/GithubLink";
 import LiveLink from "../components/links/LiveLink";
-import Markdown from "../components/Markdown";
+import Markdown from "../components/markdown/Markdown";
 import Header from "../components/Header";
 
 export default function Website() {
