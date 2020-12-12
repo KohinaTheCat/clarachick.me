@@ -27,6 +27,9 @@ const mlh = {
           "Node",
           "Express",
           "Electron",
+          "Next.js",
+          "JAMstack",
+          "Figma"
         ]}
       />
     </>
@@ -99,6 +102,23 @@ const mlh = {
         dep=""
         git="https://github.com/MLH-Fellowship/Boiler.js"
         dev="https://devpost.com/software/boiler-js"
+      />
+      <br />
+      <br />
+      <blockquote>
+        <Heading is="h3" size={560}>
+          Volunteer.me
+        </Heading>
+      </blockquote>
+      <div className="tab">
+        Volunteer.me is a global collaboration platform that connects people
+        seeking to volunteer, and those who need volunteers.
+      </div>
+      <br />
+      <ProjectSnippet
+        dep="https://volunteer-me.vercel.app/"
+        git="https://github.com/MLH-Fellowship/volunteer-me"
+        dev="https://devpost.com/software/volunteer-me-c8mq07"
       />
     </ul>
   ),

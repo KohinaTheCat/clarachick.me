@@ -110,21 +110,19 @@ html {
 #f,
 #t,
 #s {
-  font-family: 'Open Sans', sans-serif;
   font-style: italic;
   font-weight: 600;
   opacity: 0.8;
+  color: black;
 }
 
 #f,
 #t {
-  @include titleStyle(30px, 40%, absolute, 10%);
-  color: black;
-}
-
-#s {
-  @include titleStyle(90px, 40%, relative, 0px);
-  color: black;
+  @include titleStyle(30px, 45%, absolute, 10%);
+  // position: absolute;
+  // text-align: center;
+  // top: 50%;
+  // font-size: 30px;
 }
 
 #first {

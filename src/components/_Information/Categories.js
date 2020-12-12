@@ -6,7 +6,7 @@ import { experience, projects } from "../constants/Body";
 
 export class Categories extends Component {
   state = {
-    titles: ["experience", "side projects" /*, "misc."*/],
+    titles: ["experience", "projects" /*, "misc."*/],
     info: [experience, projects, this.side],
   };
 

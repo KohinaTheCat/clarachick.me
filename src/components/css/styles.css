@@ -411,27 +411,18 @@ html {
 #f,
 #t,
 #s {
-  font-family: 'Open Sans', sans-serif;
   font-style: italic;
   font-weight: 600;
   opacity: 0.8;
+  color: black;
 }
 
 #f,
 #t {
   font-size: 30px;
-  top: 40%;
+  top: 45%;
   position: absolute;
   left: 10%;
-  color: black;
-}
-
-#s {
-  font-size: 90px;
-  top: 40%;
-  position: relative;
-  left: 0px;
-  color: black;
 }
 
 #first {
