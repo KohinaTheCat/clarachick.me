@@ -31,9 +31,9 @@ export class Main extends Component {
               background={"#ddebf7"}
             />
           </div>
-          <div id="first">Clara Chick</div>
-          <div id="second">Clara Chick</div>
-          <div id="third">Clara Chick</div>
+          <div id="first">I'm Clara</div>
+          <div id="second">I'm Clara</div>
+          <div id="third">I'm Clara</div>
           <div id="sent">
             <Footer />
           </div>

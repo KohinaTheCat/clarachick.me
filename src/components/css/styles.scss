@@ -119,10 +119,6 @@ html {
 #f,
 #t {
   @include titleStyle(30px, 45%, absolute, 10%);
-  // position: absolute;
-  // text-align: center;
-  // top: 50%;
-  // font-size: 30px;
 }
 
 #first {
@@ -141,6 +137,7 @@ html {
 
 #greeting {
   @include titleStyle(30px, 70px, absolute, 10%);
+  font-family: "Lobster", serif;
 }
 
 #sent {
