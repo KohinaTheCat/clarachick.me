@@ -11,7 +11,7 @@ import Tags from "../tags/Tags";
 // experience
 const mlh = {
   heading: "MLH Fellow - Explorer Program",
-  status: "Oct. 2020 - Present",
+  status: "Oct. 2020 - Dec. 2020",
   tags: (
     <>
       <Tags tag={["Major League Hacking"]} type="w" />
@@ -173,10 +173,6 @@ const dsc = {
   body: (
     <ul className="list">
       <li>
-        Made a pseudo game lobby to where four players can choose a unique
-        colour, from seven.
-      </li>
-      <li>
         Used Redux Forms to handle form state, and input validation and
         MaterialUI to format the menu.
       </li>
@@ -185,7 +181,7 @@ const dsc = {
         projects and find group members.
       </li>
       <li>
-        Programmed a Log-in and Sign-up Menu in React and implemented the
+        Programmed a Log-in and Sign-up Menu in React by implementing the
         Firebase Authentication SDK to allow account creation, email
         verification and profile page customization.
       </li>
@@ -220,7 +216,7 @@ const ucc = {
   ),
   body: (
     <ul className="list">
-      Supervised and taught around 15 to 20 different campers programming about
+      Supervised and taught around 15 to 20 different campers about
       coding concepts using Python, on a weekly basis
     </ul>
   ),
