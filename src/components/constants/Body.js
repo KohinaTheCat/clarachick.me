@@ -29,7 +29,7 @@ const mlh = {
           "Electron",
           "Next.js",
           "JAMstack",
-          "Figma"
+          "Figma",
         ]}
       />
     </>
@@ -42,9 +42,8 @@ const mlh = {
         </Heading>
       </blockquote>
       <div className="tab">
-        Chronolo-Geese​ is a schedule conflict manager for students. It visually
-        shows what is the optimum time to meet up for group projects, study
-        sessions, or office hours with teachers.
+        Chronolo-Geese​ is a schedule conflict manager for students. It visually shows what is the
+        optimum time to meet up for group projects, study sessions, or office hours with teachers.
       </div>
       <br />
       <ProjectSnippet
@@ -60,8 +59,7 @@ const mlh = {
         </Heading>
       </blockquote>
       <div className="tab">
-        Based around Google's Dinosaur Game, Rex Run is a 3D Endless Runner made
-        in Unity.
+        Based around Google's Dinosaur Game, Rex Run is a 3D Endless Runner made in Unity.
       </div>
       <br />
       <ProjectSnippet
@@ -77,8 +75,7 @@ const mlh = {
         </Heading>
       </blockquote>
       <div className="tab">
-        A Chrome Extension that summarizes any article you're reading in just
-        one click!
+        A Chrome Extension that summarizes any article you're reading in just one click!
       </div>
       <br />
       <ProjectSnippet
@@ -94,8 +91,8 @@ const mlh = {
         </Heading>
       </blockquote>
       <div className="tab">
-        Boiler.js is a desktop application for software developers to quickly
-        find and set up boilerplates on their local machine in under a minute
+        Boiler.js is a desktop application for software developers to quickly find and set up
+        boilerplates on their local machine in under a minute
       </div>
       <br />
       <ProjectSnippet
@@ -111,8 +108,8 @@ const mlh = {
         </Heading>
       </blockquote>
       <div className="tab">
-        Volunteer.me is a global collaboration platform that connects people
-        seeking to volunteer, and those who need volunteers.
+        Volunteer.me is a global collaboration platform that connects people seeking to volunteer,
+        and those who need volunteers.
       </div>
       <br />
       <ProjectSnippet
@@ -173,17 +170,16 @@ const dsc = {
   body: (
     <ul className="list">
       <li>
-        Used Redux Forms to handle form state, and input validation and
-        MaterialUI to format the menu.
+        Used Redux Forms to handle form state, and input validation and MaterialUI to format the
+        menu.
       </li>
       <li>
-        Contributed to a web application that allows students to host their
-        projects and find group members.
+        Contributed to a web application that allows students to host their projects and find group
+        members.
       </li>
       <li>
-        Programmed a Log-in and Sign-up Menu in React by implementing the
-        Firebase Authentication SDK to allow account creation, email
-        verification and profile page customization.
+        Programmed a Log-in and Sign-up Menu in React by implementing the Firebase Authentication
+        SDK to allow account creation, email verification and profile page customization.
       </li>
       <div className="row">
         <GithubLink url="https://github.com/liuzimin/utsc-project" />
@@ -198,8 +194,8 @@ const staples = {
   tags: <Tags tag={["Staples"]} type="w" />,
   body: (
     <ul className="list">
-      Provided customers with customized advice to satisfy their technological
-      requirements, while upselling warranty plans.
+      Provided customers with customized advice to satisfy their technological requirements, while
+      upselling warranty plans.
     </ul>
   ),
 };
@@ -216,8 +212,8 @@ const ucc = {
   ),
   body: (
     <ul className="list">
-      Supervised and taught around 15 to 20 different campers about
-      coding concepts using Python, on a weekly basis
+      Supervised and taught around 15 to 20 different campers about coding concepts using Python, on
+      a weekly basis
     </ul>
   ),
 };
@@ -245,12 +241,11 @@ const uimpactify = {
   body: (
     <div>
       <ul className="list">
-        Engaged as a full-stack developer in a team of seven using the Agile
-        Scrum methodology with Jira to develop U Impactify.
+        Engaged as a full-stack developer in a team of seven using the Agile Scrum methodology with
+        Jira to develop U Impactify.
         <br />
         <br />
-        U Impactify, the E-Learning platform dedicated to serve the social
-        purpose sector. ​
+        U Impactify, the E-Learning platform dedicated to serve the social purpose sector. ​
         <br />
         <br />
         <div className="row">
@@ -266,17 +261,11 @@ const uimpactify = {
 const website = {
   heading: "clarachick.me",
   status: "updating!",
-  tags: (
-    <Tags
-      type="s"
-      tag={["Firebase Storage", "React", "Sass", "Evergreen-UI"]}
-    />
-  ),
+  tags: <Tags type="s" tag={["Firebase Storage", "React", "Sass", "Evergreen-UI"]} />,
   body: (
     <div>
       <ul className="list">
-        This is just a personal website to show my experience and technical
-        skills.
+        This is just a personal website to show my experience and technical skills.
         <br />
         <br />
         <div className="row">
@@ -292,14 +281,12 @@ const website = {
 const shell = {
   heading: "Mock Bash Shell",
   status: "finished!",
-  tags: (
-    <Tags type="s" tag={["Java", "Object Orientated Programming", "Agile"]} />
-  ),
+  tags: <Tags type="s" tag={["Java", "Object Orientated Programming", "Agile"]} />,
   body: (
     <div>
       <ul className="list">
-        Developed in a team of three using the the Agile Scrum methodology that
-        implements core bash commands.
+        Developed in a team of three using the the Agile Scrum methodology that implements core bash
+        commands.
         <br />
         <br />
         <div className="row">
@@ -314,15 +301,12 @@ const shell = {
 const budgetclara = {
   heading: "Budget Clara",
   status: "work in progress",
-  tags: (
-    <Tags type="s" tag={["MongoDB", "Express", "React", "Node", "React-vis"]} />
-  ),
+  tags: <Tags type="s" tag={["MongoDB", "Express", "React", "Node", "React-vis"]} />,
   body: (
     <div>
       <ul className="list">
-        Made a REST API with the MERN stack to allow the user to create, read,
-        update, and delete their day-to-day expenses, while having it visualized
-        using React-vis.
+        Made a REST API with the MERN stack to allow the user to create, read, update, and delete
+        their day-to-day expenses, while having it visualized using React-vis.
         <br />
         <br />
         <div className="row">
@@ -342,14 +326,14 @@ const kohinarun = {
   body: (
     <div>
       <ul className="list">
-        Kohina!Run is an open world RPG where you play as a girl who travels
-        around town to make a bowl of noodles. You have to complete minigames,
-        solve puzzles and talk to players around the town to find the
-        ingredients.
+        Kohina!Run is a relaxing RPG where your ultimate goal is to make a bowl of noodles. You play
+        as Kohina to solve puzzling challenges, fight off thieves, and interact with NPCs to find
+        and cook ingredients.
         <br />
         <br />
         <div className="row">
           <GetLink name="Kohina!Run.zip" words=""></GetLink>
+          <GithubLink url="https://github.com/KohinaTheCat/Kohina-Run" />
           <PageLink link="/about_kohinarun" />
         </div>
       </ul>
