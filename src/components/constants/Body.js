@@ -341,7 +341,28 @@ const kohinarun = {
   ),
 };
 
+const spotify_api_clone = {
+  heading: "Spotify API Clone",
+  status: "finished!",
+  tags: <Tags type="s" tag={["Java", "Sprint Boot", "MongoDB", "Neo4j"]} />,
+  body: (
+    <div>
+      <ul className="list">
+        a REST API for a Spotify-like music application that utilizes the Java Spring Boot framework
+        and microservices supported by MongoDB and Neo4j. It supports features such as profile
+        creation, following and unfollowing, liking and unliking songs, adding songs to a playlist,
+        and getting the liked songs of your friends.
+        <br />
+        <br />
+        <div className="row">
+          <GithubLink url="https://github.com/KohinaTheCat/Spotify-API-Clone" />
+        </div>
+      </ul>
+    </div>
+  ),
+};
+
 // NEW
-export const projects = [uimpactify, website, shell, budgetclara, kohinarun];
+export const projects = [uimpactify, website, spotify_api_clone, shell, budgetclara, kohinarun];
 
 export const experience = [mlh, ta, dsc, staples, ucc];
