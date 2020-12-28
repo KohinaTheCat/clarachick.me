@@ -363,6 +363,6 @@ const spotify_api_clone = {
 };
 
 // NEW
-export const projects = [uimpactify, website, spotify_api_clone, shell, budgetclara, kohinarun];
+export const projects = [uimpactify, spotify_api_clone, shell, budgetclara, kohinarun, website];
 
 export const experience = [mlh, ta, dsc, staples, ucc];
