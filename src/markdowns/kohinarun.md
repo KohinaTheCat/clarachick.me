@@ -47,7 +47,7 @@ You can manipulate the files and beat the game instantly, but what's the fun in 
 
 > Inventory Management
 
-Also kept track in `.txt` files. Items in your inventory can be taken by the :fox_face: Swiper-like Inugami. 
+Also kept track in `.txt` files. Items in your inventory can be taken by the Swiper-like Inugami. 
 
 > Animation and Player Movement
 

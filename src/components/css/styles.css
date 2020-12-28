@@ -1,8 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Lobster&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Lobster|Passion+One&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Lato&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Merienda+One&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Libre+Barcode+39&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,400;1,600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap");
 .footer {
@@ -132,6 +130,11 @@
 .title {
   font-size: 22px;
   font-weight: 600;
+  margin-right: 1rem;
+}
+
+.status{
+  white-space: nowrap;
 }
 
 .body {
@@ -365,14 +368,6 @@ html {
   position: relative;
   height: 225px;
   width: 225px;
-}
-
-#bar {
-  top: -10%;
-  opacity: 0.5;
-  position: relative;
-  font-size: 30px;
-  font-family: "Libre Barcode 39", cursive;
 }
 
 .Card2 {

@@ -23,7 +23,7 @@ function CategoryCard(props) {
           <Heading is="h1" size={700} className="title">
             {props.heading}
           </Heading>
-          <Text>{props.status}</Text>
+          <Text className="status">{props.status}</Text>
         </div>
         <Text className="body">{props.tags}</Text>
         {click ? (

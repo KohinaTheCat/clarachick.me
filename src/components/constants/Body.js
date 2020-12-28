@@ -174,7 +174,7 @@ const dsc = {
         menu.
       </li>
       <li>
-        Contributed to a web application that allows students to host their projects and find group
+        Contributed to a web application that allows students to connect project founders and skilled developers
         members.
       </li>
       <li>
@@ -286,7 +286,7 @@ const shell = {
     <div>
       <ul className="list">
         Developed in a team of three using the the Agile Scrum methodology that implements core bash
-        commands.
+        commands in a Java terminal.
         <br />
         <br />
         <div className="row">
@@ -305,6 +305,7 @@ const budgetclara = {
   body: (
     <div>
       <ul className="list">
+        A full-stack web application that keeps track of my day-to-day expenses.
         Made a REST API with the MERN stack to allow the user to create, read, update, and delete
         their day-to-day expenses, while having it visualized using React-vis.
         <br />
