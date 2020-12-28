@@ -3,7 +3,6 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "caniuse-lite": "^1.0.30001165",
     "evergreen-ui": "^4.21.5",
     "firebase": "^7.16.0",
     "firebase-tools": "^9.0.1",
