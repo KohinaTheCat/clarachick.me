@@ -3,7 +3,6 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "axios": "^0.21.0",
     "caniuse-lite": "^1.0.30001165",
     "evergreen-ui": "^4.21.5",
     "firebase": "^7.16.0",
@@ -14,18 +13,15 @@
     "prismjs": "^1.20.0",
     "react": "^16.12.0",
     "react-animated-css": "^1.2.1",
-    "react-bootstrap": "^1.0.0-beta.16",
     "react-dom": "^16.12.0",
     "react-markdown": "^4.3.1",
-    "react-redux": "^7.2.0",
     "react-router-dom": "^5.1.2",
     "react-scripts": "^3.4.0",
     "react-sky": "^1.1.0",
     "react-slick": "^0.27.11",
     "react-syntax-highlighter": "^12.2.1",
     "redux-form": "^8.3.5",
-    "slick-carousel": "^1.8.1",
-    "vanta": "^0.5.10"
+    "slick-carousel": "^1.8.1"
   },
   "scripts": {
     "start": "react-scripts start",
