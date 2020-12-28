@@ -356,6 +356,7 @@ const spotify_api_clone = {
         <br />
         <div className="row">
           <GithubLink url="https://github.com/KohinaTheCat/Spotify-API-Clone" />
+          <Live url="https://navn.me/spotify-api-clone/" />
         </div>
       </ul>
     </div>
