@@ -345,7 +345,7 @@ const kohinarun = {
 const spotify_api_clone = {
   heading: "Spotify API Clone",
   status: "finished!",
-  tags: <Tags type="s" tag={["Java", "Sprint Boot", "MongoDB", "Neo4j"]} />,
+  tags: <Tags type="s" tag={["Java", "Spring Boot", "MongoDB", "Neo4j"]} />,
   body: (
     <div>
       <ul className="list">
