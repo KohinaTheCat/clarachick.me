@@ -174,8 +174,8 @@ const dsc = {
         menu.
       </li>
       <li>
-        Contributed to a web application that allows students to connect project founders and skilled developers
-        members.
+        Contributed to a web application that allows students to connect project founders and
+        skilled developers members.
       </li>
       <li>
         Programmed a Log-in and Sign-up Menu in React by implementing the Firebase Authentication
@@ -245,7 +245,8 @@ const uimpactify = {
         Jira to develop U Impactify.
         <br />
         <br />
-        U Impactify, the E-Learning platform dedicated to serve the social purpose sector. ​
+        U Impactify, the E-Learning platform dedicated to serve the social purpose sector. ​Users
+        can use this platform to expand their company, teach, and learn.
         <br />
         <br />
         <div className="row">
@@ -272,6 +273,26 @@ const website = {
           <GithubLink url="https://github.com/KohinaTheCat/clarachick.me" />
           <Live url="https://clarachick.me/" />
           <PageLink link="/about_website" />
+        </div>
+      </ul>
+    </div>
+  ),
+};
+
+const chronolo = {
+  heading: "Chronolo-Geese",
+  status: "finished!",
+  tags: <Tags type="s" tag={["Firebase", "React", "Google Calendar API"]} />,
+  body: (
+    <div>
+      <ul className="list">
+        Chronolo-Geese​ is a schedule conflict manager for students. It visually shows what is the
+        optimum time to meet up for group projects, study sessions, or office hours with teachers.
+        <br />
+        <br />
+        <div className="row">
+          <GithubLink url="https://github.com/MLH-Fellowship/Chronolo-Geese" />
+          <Live url="https://chronolo-geese.web.app/" />
         </div>
       </ul>
     </div>
@@ -305,9 +326,9 @@ const budgetclara = {
   body: (
     <div>
       <ul className="list">
-        A full-stack web application that keeps track of my day-to-day expenses.
-        Made a REST API with the MERN stack to allow the user to create, read, update, and delete
-        their day-to-day expenses, while having it visualized using React-vis.
+        A full-stack web application that keeps track of my day-to-day expenses. Made a REST API
+        with the MERN stack to allow the user to create, read, update, and delete their day-to-day
+        expenses, while having it visualized using React-vis.
         <br />
         <br />
         <div className="row">
@@ -364,7 +385,27 @@ const spotify_api_clone = {
   ),
 };
 
-// NEW
-export const projects = [uimpactify, spotify_api_clone, shell, budgetclara, kohinarun, website];
-
+// all
+export const projects = [
+  uimpactify,
+  spotify_api_clone,
+  chronolo,
+  shell,
+  budgetclara,
+  kohinarun,
+  website,
+];
 export const experience = [mlh, ta, dsc, staples, ucc];
+
+// featured
+export const projects_featured = [uimpactify, chronolo, shell, kohinarun];
+export const experience_featured = [mlh, ta, dsc];
+
+// misc. experience
+export const experience_programming = [mlh, dsc];
+export const experience_teaching = [mlh, ta, ucc];
+
+//misc. projects
+export const projects_web = [uimpactify, chronolo, budgetclara, website];
+export const projects_java = [spotify_api_clone, shell];
+export const projects_group = [uimpactify, spotify_api_clone, chronolo, shell, kohinarun];

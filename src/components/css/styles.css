@@ -133,7 +133,7 @@
   margin-right: 1rem;
 }
 
-.status{
+.status {
   white-space: nowrap;
 }
 
@@ -415,8 +415,7 @@ html {
 #f,
 #t {
   font-size: 30px;
-  top: 45%;
-  position: absolute;
+  top: 25%;
   left: 10%;
 }
 
@@ -508,6 +507,10 @@ html {
   #third {
     padding-left: 4px;
   }
+  #f,
+  #t {
+    top: 10%;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -516,6 +519,11 @@ html {
   #third {
     margin-top: 5%;
     font-size: 50px;
+  }
+
+  #f,
+  #t {
+    top: 10%;
   }
 }
 /*# sourceMappingURL=styles.css.map */
