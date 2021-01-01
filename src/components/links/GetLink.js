@@ -1,6 +1,7 @@
 import React from "react";
 import * as firebase from "firebase";
 import { Link } from "evergreen-ui";
+import '../css/links.css'
 
 //TODO: put into an .env
 var firebaseConfig = {
@@ -50,7 +51,7 @@ export default function GetLink(props) {
           alt="github"
         />
       ) : (
-        <h4>{props.words}</h4>
+        <h4 id="pointer">{props.words}</h4>
       )}
     </Link>
   );
