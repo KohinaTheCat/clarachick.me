@@ -79,7 +79,7 @@ export class Categories extends Component {
                 <Heading size={600} is="h3" id="f">
                   {title}
                   <Tablist marginBottom={16} flexBasis={240} marginRight={24}>
-                    <br/>
+                    <br />
                     {this.state.tabs[index].map((tab, i) => (
                       <Tab
                         key={tab}
