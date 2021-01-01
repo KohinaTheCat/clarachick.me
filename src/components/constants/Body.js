@@ -37,7 +37,7 @@ const mlh = {
   body: (
     <ul className="list">
       <blockquote>
-        <Heading is="h3" size={560}>
+        <Heading is="h3" size={500}>
           Chronolo-Geese
         </Heading>
       </blockquote>
@@ -54,7 +54,7 @@ const mlh = {
       <br />
       <br />
       <blockquote>
-        <Heading is="h3" size={560}>
+        <Heading is="h3" size={500}>
           Rex Run
         </Heading>
       </blockquote>
@@ -70,7 +70,7 @@ const mlh = {
       <br />
       <br />
       <blockquote>
-        <Heading is="h3" size={560}>
+        <Heading is="h3" size={500}>
           Simplify
         </Heading>
       </blockquote>
@@ -86,7 +86,7 @@ const mlh = {
       <br />
       <br />
       <blockquote>
-        <Heading is="h3" size={560}>
+        <Heading is="h3" size={500}>
           Boiler.js
         </Heading>
       </blockquote>
@@ -103,7 +103,7 @@ const mlh = {
       <br />
       <br />
       <blockquote>
-        <Heading is="h3" size={560}>
+        <Heading is="h3" size={500}>
           Volunteer.me
         </Heading>
       </blockquote>

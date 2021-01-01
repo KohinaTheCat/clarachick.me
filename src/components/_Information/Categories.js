@@ -78,11 +78,11 @@ export class Categories extends Component {
               <Card className="Card Card3" elevation={1} key={title} margin={24}>
                 <Heading size={600} is="h3" id="f">
                   {title}
-                  <Tablist marginBottom={16} flexBasis={240} marginRight={24}>
+                  <Tablist key={title} marginBottom={16} flexBasis={240} marginRight={24}>
                     <br />
                     {this.state.tabs[index].map((tab, i) => (
                       <Tab
-                        key={tab}
+                        key={title + tab + i}
                         id={tab}
                         onSelect={() => this.updateFilter(index, i)}
                         isSelected={i === this.state.selectedIndex[index]}

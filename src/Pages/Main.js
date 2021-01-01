@@ -3,7 +3,7 @@ import "../components/css/styles.css";
 import "../components/css/util.css";
 
 import { images } from "../components/constants/Images";
-import { Categories } from "../components/_Information/Categories";
+import { Categories } from "../components/_information/Categories";
 import GetLink from "../components/links/GetLink";
 import ScrollToTop from "../components/utils/ScrollToTop";
 import Footer from "../components/Footer";
