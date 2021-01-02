@@ -1,0 +1,18 @@
+$headerBack: #ddebf7;
+$cardBack: #fdf8f3;
+$introBack: #fef6f6;
+$title1: #fae3cd;
+$title2: #d9822b;
+$darkG: #234361;
+$medG: #425a70;
+$footerBack: #e6f2ff;
+
+@mixin HW($height, $width) {
+  height: $height;
+  width: $width;
+}
+
+@mixin row() {
+  display: flex;
+  flex-direction: row;
+}
