@@ -123,7 +123,7 @@ const mlh = {
 
 const ta = {
   heading: "Teaching Assistant",
-  status: "Sept. 2020 - Present",
+  status: "Sept. 2020 - Dec. 2020",
   tags: (
     <>
       <Tags tag={["University of Toronto"]} type="w" />
