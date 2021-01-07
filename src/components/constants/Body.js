@@ -121,9 +121,25 @@ const mlh = {
   ),
 };
 
+const verto = {
+  heading: "Software Developer",
+  status: "Jan. 2021 - Present",
+  tags: (
+    <>
+      <Tags tag={["Verto Health"]} type="w" />
+      <br />
+      <Tags type="s" tag={["Ruby on Rails"]} />
+    </>
+  ),
+  body: (
+    <>
+    </>
+  ),
+};
+
 const ta = {
   heading: "Teaching Assistant",
-  status: "Sept. 2020 - Dec. 2020",
+  status: "Sept. 2020 - Present",
   tags: (
     <>
       <Tags tag={["University of Toronto"]} type="w" />
@@ -133,7 +149,19 @@ const ta = {
   ),
   body: (
     <ul className="list">
-      <li>
+      Winter 2021
+      <li class="tab">
+        <Link
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://utsc.calendar.utoronto.ca/course/csca48h3"
+        >
+          CSCA48
+        </Link>
+        {"  "}- Introduction to Computer Science II
+      </li>
+      Fall 2020
+      <li class="tab">
         <Link
           target="_blank"
           rel="noopener noreferrer"
@@ -143,7 +171,7 @@ const ta = {
         </Link>
         {"  "}- Introduction to Computer Science I
       </li>
-      <li>
+      <li class="tab">
         <Link
           target="_blank"
           rel="noopener noreferrer"
@@ -395,14 +423,14 @@ export const projects = [
   kohinarun,
   website,
 ];
-export const experience = [mlh, ta, dsc, staples, ucc];
+export const experience = [verto, mlh, ta, dsc, staples, ucc];
 
 // featured
 export const projects_featured = [uimpactify, chronolo, shell, kohinarun];
-export const experience_featured = [mlh, ta, dsc];
+export const experience_featured = [verto, mlh, ta];
 
 // misc. experience
-export const experience_programming = [mlh, dsc];
+export const experience_programming = [verto, mlh, dsc];
 export const experience_teaching = [mlh, ta, ucc];
 
 //misc. projects

@@ -20,7 +20,7 @@ export class Categories extends Component {
     info: [experience, projects /*, this.side */],
     tabs: [
       ["all", "featured", "programming", "teaching"],
-      ["all", "featured", "web-dev", "java", "group / agile"],
+      ["all", "featured", "web apps", "java", "group / agile"],
     ],
     selectedIndex: [0, 0],
   };
