@@ -122,13 +122,27 @@ const mlh = {
 };
 
 const verto = {
-  heading: "Software Developer",
+  heading: "Full-Stack Developer",
   status: "Jan. 2021 - Present",
   tags: (
     <>
       <Tags tag={["Verto Health"]} type="w" />
       <br />
-      <Tags type="s" tag={["Ruby on Rails"]} />
+      <Tags type="s" tag={["Ruby on Rails", "Angular", "Flask", "Vue", "XState"]} />
+    </>
+  ),
+  body: (
+    <>
+    </>
+  ),
+};
+
+const ws = {
+  heading: "Incoming Software Engineer",
+  status: "May 2021 - August 2021",
+  tags: (
+    <>
+      <Tags tag={["Wealthsimple"]} type="w" />
     </>
   ),
   body: (
@@ -144,7 +158,7 @@ const ta = {
     <>
       <Tags tag={["University of Toronto"]} type="w" />
       <br />
-      <Tags type="s" tag={["Python"]} />
+      <Tags type="s" tag={["C", "Python"]} />
     </>
   ),
   body: (
@@ -251,6 +265,9 @@ const uimpactify = {
   heading: "U Impactify",
   status: "finished!",
   tags: (
+    <>
+    <Tags type="t" tag={["online learning platform"]} />
+    <br/>
     <Tags
       type="s"
       tag={[
@@ -265,6 +282,7 @@ const uimpactify = {
         "Agile",
       ]}
     />
+    </>
   ),
   body: (
     <div>
@@ -310,12 +328,16 @@ const website = {
 const chronolo = {
   heading: "Chronolo-Geese",
   status: "finished!",
-  tags: <Tags type="s" tag={["Firebase", "React", "Google Calendar API"]} />,
+  tags: <>
+    <Tags type="t" tag={["collaboration tool"]} />
+    <br/>
+    <Tags type="s" tag={["Firebase", "React", "Google Calendar API"]} />
+  </>,
   body: (
     <div>
       <ul className="list">
-        Chronolo-Geese​ is a schedule conflict manager for students. It visually shows what is the
-        optimum time to meet up for group projects, study sessions, or office hours with teachers.
+        Chronolo-Geese​ is a schedule conflict manager designed to help you seamlessly coordinate 
+        events between multiple groups.
         <br />
         <br />
         <div className="row">
@@ -372,7 +394,11 @@ const budgetclara = {
 const kohinarun = {
   heading: "Kohina!Run",
   status: "finished!",
-  tags: <Tags type="s" tag={["Visual Basic"]} />,
+  tags: <> 
+    <Tags type="t" tag={["fun game"]} />
+    <br/>
+    <Tags type="s" tag={["Visual Basic"]} />
+  </>,
   body: (
     <div>
       <ul className="list">
@@ -413,8 +439,32 @@ const spotify_api_clone = {
   ),
 };
 
+const the_rottery = {
+  heading: "The Rottery",
+  status: "updating!",
+  tags:
+    <> 
+      <Tags type="t" tag={["dApp"]} />
+      <br/>
+      <Tags type="s" tag={["Solidity", "React", "Chai", "Hardhat", "Ethers.js", "OpenZeppelin"]} />
+    </>,
+  body: (
+    <div>
+      <ul className="list">
+        Source code will be provided upon request.
+        <br />
+        <br />
+        <div className="row">
+          <Live url="https://the-rottery.web.app/" />
+        </div>
+      </ul>
+    </div>
+  ),
+};
+
 // all
 export const projects = [
+  the_rottery,
   uimpactify,
   spotify_api_clone,
   chronolo,
@@ -423,17 +473,17 @@ export const projects = [
   kohinarun,
   website,
 ];
-export const experience = [verto, mlh, ta, dsc, staples, ucc];
+export const experience = [ws, verto, mlh, ta, dsc, staples, ucc];
 
 // featured
-export const projects_featured = [uimpactify, chronolo, shell, kohinarun];
-export const experience_featured = [verto, mlh, ta];
+export const projects_featured = [the_rottery, uimpactify, shell, kohinarun];
+export const experience_featured = [ws, verto, mlh, ta];
 
 // misc. experience
 export const experience_programming = [verto, mlh, dsc];
 export const experience_teaching = [mlh, ta, ucc];
 
 //misc. projects
-export const projects_web = [uimpactify, chronolo, budgetclara, website];
+export const projects_web = [the_rottery, uimpactify, chronolo, budgetclara, website];
 export const projects_java = [spotify_api_clone, shell];
 export const projects_group = [uimpactify, spotify_api_clone, chronolo, shell, kohinarun];

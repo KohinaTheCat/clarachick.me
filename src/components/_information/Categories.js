@@ -17,9 +17,9 @@ import {
 export class Categories extends Component {
   state = {
     titles: ["experience", "projects" /*, "misc."*/],
-    info: [experience, projects /*, this.side */],
+    info: [experience_featured, projects /*, this.side */],
     tabs: [
-      ["all", "featured", "programming", "teaching"],
+      ["featured", "all", "programming", "teaching"],
       ["all", "featured", "web apps", "java", "group / agile"],
     ],
     selectedIndex: [0, 0],

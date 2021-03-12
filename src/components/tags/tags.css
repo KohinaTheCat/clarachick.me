@@ -5,7 +5,7 @@
   text-align: center;
   display: inline-block;
   margin: 0.5rem 0.5rem 0px 0px;
-  font-size: 0.9rem;
+  font-size: 1rem;
 }
 
 .s {
@@ -17,5 +17,12 @@
   border-radius: 0rem;
   background-color: rgba(241, 171, 134, 0.3);
   color: #942911;
+  font-size: 1.2rem;
+}
+
+.t {
+  border-radius: 0rem;
+  background-color: #FAE2E2;
+  color: #EC4C47;
   font-size: 1.2rem;
 }
